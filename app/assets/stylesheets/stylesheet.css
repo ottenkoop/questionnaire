@@ -288,3 +288,13 @@ div.box_bg {
 }
 
 /* End of Storyline Screen */
+
+.footer{
+	max-width: 640px;
+	max-height: 480px;
+	min-width: 640px;
+	min-height: 480px;
+	color: gray;
+	margin: auto;
+	text-align: right;
+}
