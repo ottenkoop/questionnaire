@@ -1,0 +1,21 @@
+# == Schema Information
+#
+# Table name: answers
+#
+#  id          :integer          not null, primary key
+#  content     :string(255)
+#  points      :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  question_id :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content: MyString
+  points: 1
+
+two:
+  content: MyString
+  points: 1

@@ -1,0 +1,17 @@
+	
+	<p>Category of the Survey:</p>
+	<%= @survey.name %></br>
+
+<ol>
+	<% @survey.questions.each do |q| %>
+	
+	<li><%= q.content %></li>
+		<ul>
+		<% q.answers.each do |a| %>
+
+		<li><%= a.content %>
+			<%= a.points %></li></br>
+			<% end %>
+		</ul>
+	<% end %>
+</ol>

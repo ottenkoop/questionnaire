@@ -1,0 +1,24 @@
+<%= form_for @result do |r| %>
+	
+		<% @survey.questions.each do |q| %>
+		<div class= <%= "question#{q.id}" %>>
+			<%= q.content %><br />
+			
+			<% q.answers.each do |answer| %>	
+				
+				<li><%= r.fields_for :answer_results do |a| %>
+				<%= a.check_box :answer_id, {}, answer.id %>
+				<%= answer.content %></li>
+				<% end %>
+			<% end %><br />
+		</div>
+
+		<% end %>
+
+		<a class="next" href="#" >Next step</a>
+		<a class="next2" href="#" >Next step</a>
+
+
+	<a class="complete"><%= r.submit "Complete Questionnaire" %></a>
+
+<% end %>

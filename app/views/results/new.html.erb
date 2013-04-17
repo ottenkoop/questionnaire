@@ -1,0 +1,17 @@
+<%= form_for @result do |r| %>
+	
+		<% @survey.questions.each do |q| %>
+			<%= q.content %><br />
+			<ul>
+			<% q.answers.each do |answer| %>	
+				<li><%= r.fields_for :answer_results do |a| %>
+				<%= a.check_box :answer_id, {}, answer.id %>
+				<%= answer.content %></li></ul>
+				<% end %>
+			<% end %><br />
+
+		<% end %>
+
+	<%= r.submit %>
+
+<% end %>
