@@ -1,23 +1,20 @@
 $(document).ready(() ->
-	$('div.question4').hide()
-	$('div.question5').hide()
-	$('a.next2').hide()
-	$('a.complete').hide()
 
-	$('a.next').on('click', () ->
-		$('div.question4').show()
-		$('div.question3').hide()
-		$('a.next').hide()
-		$('a.next2').show()
+	$('div.question:not(:first)').hide()
+	$('.next_btn2').hide()
+	count_questions = $("#new_result .question").length
+	check_question = 1
 
+	$('a.next_btn').on('click', (e) ->
+		if check_question == 2
+			$('form div.question:visible').hide().next().show()
+			$(this).hide()
+			$('.next_btn2').show()
+		else
+			$('form div.question:visible').hide().next().show()
+
+		check_question++
+		e.preventDefault()
 		return false
-	)
-
-	$('a.next2').on('click', () ->
-		$('div.question4').hide()
-		$('div.question5').show()
-		$('a.next2').hide()
-		$('a.complete').show()
-
 	)
 )

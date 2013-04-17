@@ -1,0 +1,181 @@
+/* 
+
+##### ABBREVIATIONS #####
+
+bg = background
+thumb = thumbnail
+
+tchr = teacher
+dctr = doctor
+xplr = explorer
+prnt = parent
+
+*/
+
+
+
+
+
+/* Start of General CSS Stuff (returning on all pages) */
+
+html, body {
+	background-image: url('../assets/background.png');
+	font-family: "helsinki";
+	font-size: 12px;
+	color: #000;
+}
+
+div.container-fluid {
+	max-width: 640px;
+	max-height: 480px;
+	min-width: 640px;
+	min-height: 480px;
+	margin: auto auto;
+	padding: 0px;
+	background-color: #00f;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2.title {
+	color: #fff;
+	margin-left: 30px;
+	line-height: 1.3em;
+	font-size: 1.3em;
+}
+
+h2.level {
+	color: #fff;
+	text-align: center;
+	line-height: 1.3em;
+	font-size: 1.3em;
+}
+
+p {
+	font-size: 1em;
+}
+
+div.button {
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+}
+
+div.backbutton {
+	margin-top: 110px;
+	font-size: 1em;
+	text-align: center;
+}
+
+/* End of General CSS Stuff (returning on all pages) */
+
+
+
+
+
+/* Start of General CSS Stuff (returning on most pages) */
+
+a#next {
+	font-size: 1em;
+	text-align: center;		/* why doesn't this work? */
+}
+
+div.content {
+	margin: 10px 0px;
+	padding: 10px;
+	background-color: #ccc;
+}
+
+/* End of General CSS Stuff (returning on most pages) */
+
+
+
+
+
+/* Start of Title Screen */
+
+}
+
+h1.title {
+	text-align: center;
+}
+
+div#topmenu {
+	background-color: #;
+}
+
+div#titlescreen_bg {
+	background-image: url('../assets/titlescreen_bg.png');
+}
+
+/* End of Title Screen */
+
+
+
+
+/* Start of Storyline Screen */
+
+div.dialog {
+	padding: 25px;
+}
+
+h3.storyleft {
+	color: #444;
+	margin-left: 30px;
+	line-height: 1.3em;
+	font-size: 1.3em;
+}
+
+div#story_bg {
+	background-image: url('../assets/story_bg.png');
+}
+
+div.box_bg {
+	height: 331px;
+	background-image: url('../assets/box.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 75px;
+}
+
+div.level_bg {
+	background-image: url('../assets/level_bg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* End of Storyline Screen */
+
+
+
+
+
+/* Start of Choose A Dream */
+
+div#chooseadream_bg {
+	background-image: url('../assets/chooseadream_bg.png');
+}
+
+div.dream {
+	width: 213px;
+	height: 153px;
+	background-image: url('../assets/dream.png');
+	text-align: center;
+	padding-top: 60px;
+}
+
+/* End of Choose A Dream */
+
+
+
+
+
+/* Start of Dream: Teacher */
+
+div#classroom_bg {
+	background-image: url('../assets/classroom_bg.png');
+}
+
+/* End of Dream: Teacher */

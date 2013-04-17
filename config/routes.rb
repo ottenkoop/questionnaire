@@ -6,6 +6,10 @@ Questionnaire::Application.routes.draw do
 
   root to: 'pages#page1'
 
+  match '/page2' => 'pages#page2'
+  match '/page3' => 'pages#page3'
+  match '/page4' => 'pages#page4'
+  match '/page5' => 'pages#page5'
   match '/page6' => 'pages#page6'
 
   # The priority is based upon order of creation:
