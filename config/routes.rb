@@ -11,7 +11,7 @@ Questionnaire::Application.routes.draw do
   match '/page3' => 'pages#page3'
   match '/page4' => 'pages#page4'
   match '/page5' => 'pages#page5'
-  match '/results/:id' => 'pages#page6'
+  match '/results/:id' => 'results#show', as: 'page6'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
