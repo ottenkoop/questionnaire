@@ -6,4 +6,8 @@ def page5
 	@result.answer_results.build
 end
 
+def page6
+	@result = Result.find(params[:id])
+end
+
 end

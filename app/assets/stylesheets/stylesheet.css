@@ -298,3 +298,18 @@ div.box_bg {
 	margin: auto;
 	text-align: right;
 }
+
+/* Start of Score Screen */
+
+div#ss-classroom_bg {
+	background-image: url('../assets/ss-classroom_bg.png');
+}
+
+div.score {
+	color: #fff;
+	margin-top: 90px;
+	margin-bottom: 206px;
+}
+
+
+/* End of Score Screen */
