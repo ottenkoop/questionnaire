@@ -9,7 +9,8 @@ end
 def create
 	@result = Result.new(params[:result])
 	if @result.save
-  			redirect_to @result
+			session[:result_id] = @result.id
+  			redirect_to '/6'
   		else
   			render 'new'
   	end

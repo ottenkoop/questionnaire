@@ -2,10 +2,11 @@
 	<p>Category of the Survey:</p>
 	<%= @survey.name %></br>
 
+
 <ol>
 	<% @survey.questions.each do |q| %>
 	
-	<li><%= q.content %></li>
+	<li><%= q.content %></li><%= link_to 'edit', edit_question_path(q.id) %>
 		<ul>
 		<% q.answers.each do |a| %>
 
@@ -13,5 +14,9 @@
 			<%= a.points %></li></br>
 			<% end %>
 		</ul>
+
+	
 	<% end %>
 </ol>
+
+<%= link_to 'new', {:controller => 'questions', :action => 'new', :id => @survey.id } %>

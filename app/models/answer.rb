@@ -8,10 +8,11 @@
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  question_id :integer
+#  discription :string(255)
 #
 
 class Answer < ActiveRecord::Base
-  attr_accessible :content, :points, :question_id
+  attr_accessible :content, :points, :question_id, :discription
 
   belongs_to :question
   has_many :results, :through => :answer_results

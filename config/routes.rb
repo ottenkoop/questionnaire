@@ -3,15 +3,17 @@ Questionnaire::Application.routes.draw do
   resources :surveys
   resources :results
   resources :pages
+  resources :questions
 
   root to: 'pages#page0'
 
-  match '/page1' => 'pages#page1'
-  match '/page2' => 'pages#page2'
-  match '/page3' => 'pages#page3'
-  match '/page4' => 'pages#page4'
-  match '/page5' => 'pages#page5'
-  match '/results/:id' => 'results#show', as: 'page6'
+  match '/1' => 'pages#01. introduction/page1'
+  match '/2' => 'pages#01. introduction/page2'
+  match '/3' => 'pages#01. introduction/page3'
+  match '/4' => 'pages#02. teacher_story/page4'
+  match '/5' => 'pages#page5'
+  match '/6' => 'pages#page6'
+  match '/7' => 'pages#02. teacher_story/page7'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -2,7 +2,7 @@
     <div class="row-fluid">
       <div class="span6 offset3 score">
         <h3>Score:</h3>
-        <p>You answered <%= @result.answers.sum(:points) %> of the 3 questions right.</p>
+        <p>You have scored <%= @result.answers.sum(:points) %> points!</p>
       </div> 
     </div>
     <div class="row-fluid">

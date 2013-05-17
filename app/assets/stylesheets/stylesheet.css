@@ -19,7 +19,6 @@ prnt = parent
 /* Start of General CSS Stuff (returning on all pages) */
 
 html, body {
-	background-image: url('../assets/background.png');
 	font-size: 12px;
 	color: #000;
 }
@@ -37,10 +36,10 @@ div.container-fluid {
 
 
 
-/* Screen 6 */
+/* Screen 5 */
 
 #bg_image {
-	background-image: url('../assets/backgrounds/background1.png');
+	background-image: url('../assets/background1.png');
 	background-repeat: no-repeat;
 	border-radius: 5px;
 }
@@ -83,14 +82,28 @@ div.container-fluid {
 	margin-top:6px;
 }
 
-.next_btn {
+.next_btn1 {
 	background-image: url('../assets/buttons/next_button.png');
 	background-repeat: no-repeat;
 	height: 41px;
 	width: 104px !important;
 }
 
-.next_btn:hover {
+.next_btn1:hover {
+	background-image: url('../assets/buttons/next_button_hover.png');
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 104px !important;
+}
+
+.next_btn0 {
+	background-image: url('../assets/buttons/next_button.png');
+	background-repeat: no-repeat;
+	height: 41px;
+	width: 104px !important;
+}
+
+.next_btn0:hover {
 	background-image: url('../assets/buttons/next_button_hover.png');
 	background-repeat: no-repeat;
 	height: 40px;
@@ -100,8 +113,9 @@ div.container-fluid {
 .next_btn2 {
 	background-image: url('../assets/buttons/next_button.png');
 	background-repeat: no-repeat;
-	height: 41px;
-	width: 104px !important;
+	height: 39px;
+	width: 100px !important;
+	border: none;
 }
 
 .next_btn2:hover {

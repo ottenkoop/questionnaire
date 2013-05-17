@@ -1,0 +1,22 @@
+<%= form_for @question do |q| %>
+
+	<%= q.label :content, "Question" %>
+	<%= q.text_area :content, :rows => 2 %></p>
+
+	<%= q.fields_for :answers do |a| %>
+	  
+	<%= a.label :content, "Answer" %>
+	<%= a.text_field :content %>
+	<%= a.label :discription, "Uitleg:" %>
+	<%= a.text_field :discription %>
+	<%= a.select :points, options_for_select([["Choose the Right Answer"], "0", "1"], params[:options]) %></br>
+
+	 
+	<% end %><br />
+	<%= q.submit %>
+<% end %>
+
+<%= @question.survey_id %>
+
+
+<br /><br />

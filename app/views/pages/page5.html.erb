@@ -36,7 +36,8 @@
                 <div class="radio_quiz" %>
                  <%= r.fields_for :answer_results do |a| %>
                   <% q.answers.each do |answer| %>
-                  <label for "radio1"><%= a.radio_button :answer_id, answer.id %><%= answer.content %></label>
+                  <label class="answercontent"><%= a.radio_button :answer_id, answer.id %><%= answer.content %></label>
+                  <div class="discription"><%= answer.discription %></div>
             <% end %>
                 </div>
           </div>
@@ -49,7 +50,8 @@
 
       
       <div class="row-fluid">
-        <a class="span2 offset9 next_btn"></a>
+        <a class="span2 offset9 next_btn0"></a>
+        <a class="span2 offset9 next_btn1"></a>
         <a class="span 2 offset9 "><%= r.submit "", :class => "next_btn2" %></a>
         </div>
       </div>
