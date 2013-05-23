@@ -3,19 +3,30 @@
     <div class="row-fluid">
       <div id="tchr_thumb" class="span4 dream">
         <a href="/4">
-          Dream 1
+          Dream 1</a>
           <% if session[:dream1] %>
-            <p>asdfasdf</p>
+            <p>Session1</p>
           <% else %>
             <p></p>
           <% end %>
-        </a>
+
       </div>
       <div id="dctr_thumb" class="span4 dream">
         <a href="#">Dream 2</a>
+          <% if session[:dream2] %>
+            <p>Session2</p>
+          <% else %>
+            <p></p>
+          <% end %>
+
       </div>
       <div id="xplr_thumb" class="span4 dream">
         <a href="#">Dream 3</a>
+          <% if session[:dream3] %>
+            <p>Session3</p>
+          <% else %>
+            <p></p>
+          <% end %>
       </div>
     </div>
     <div class="row-fluid">

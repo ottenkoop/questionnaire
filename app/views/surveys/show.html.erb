@@ -6,7 +6,9 @@
 <ol>
 	<% @survey.questions.each do |q| %>
 	
-	<li><%= q.content %></li><%= link_to 'edit', edit_question_path(q.id) %>
+	<li><%= q.content %></li>
+			<%= link_to 'edit', edit_question_path(q.id) %>
+			<%= link_to 'delete', question_path(q.id), confirm: "Are you sure?", method: :delete %>
 		<ul>
 		<% q.answers.each do |a| %>
 

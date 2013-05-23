@@ -35,4 +35,13 @@ def create
     end
 end
 
+  def destroy
+    @question = Question.find(params[:id])
+    @question.destroy
+    respond_to do |format|
+      format.html { redirect_to('/surveys') }
+      format.xml  { head :ok }
+    end
+  end
+
 end

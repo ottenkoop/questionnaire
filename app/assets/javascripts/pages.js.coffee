@@ -4,11 +4,15 @@ $(document).ready(() ->
 	$('.next_btn2').hide()
 	$('.next_btn1').hide()
 	$('div.discription').hide()
+	$('div.points').hide()
+	$('div.goodanswer').hide()
+	$('div.wronganswer').hide()
 	count_questions = $("#new_result .question").length
 	check_question = 1
-
+	
 	$('a.next_btn1').on('click', (e) ->
 		$('label.answercontent').show()
+		$('div.discription').hide()
 		if check_question == count_questions - 1
 			$('form div.question:visible').hide().next().show()
 			$(this).hide()
@@ -24,9 +28,22 @@ $(document).ready(() ->
 	)
 
 	$('a.next_btn0').on('click', (e) ->
-		$('div.discription').show()
-		$('label.answercontent').hide()
-		$('.next_btn0').hide()
-		$('.next_btn1').show()
-		)
+		selected_answer_points = parseInt($(':radio:checked').next('input').attr('value'));
+		console.log(typeof selected_answer_points);
+
+		if !$(":radio:checked").length
+		 	alert "Please select one radio"
+		else if selected_answer_points == 1
+			$('div.goodanswer').show()
+			$('div.discription').show()
+			$('label.answercontent').hide()
+			$('.next_btn0').hide()
+			$('.next_btn1').show()
+		else
+			$('div.wronganswer').show()
+			$('div.discription').show()
+			$('label.answercontent').hide()
+			$('.next_btn0').hide()
+			$('.next_btn1').show()
+	)
 )

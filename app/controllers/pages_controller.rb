@@ -5,10 +5,9 @@ def page0
 end
 
 def page5
-			@survey = Survey.find_by_name("School")
-			@result = Result.new
-			@result.answer_results.build
-			reset_session
+		@survey = Survey.find_by_name("School")
+		@result = Result.new
+		@result.answer_results.build
 end
 
 def page6

@@ -35,11 +35,22 @@
             
                 <div class="radio_quiz" %>
                  <%= r.fields_for :answer_results do |a| %>
-                  <% q.answers.each do |answer| %>
-                  <label class="answercontent"><%= a.radio_button :answer_id, answer.id %><%= answer.content %></label>
-                  <div class="discription"><%= answer.discription %></div>
-            <% end %>
+              <% q.answers.each do |answer| %>
+                <label class="answercontent"><%= a.radio_button :answer_id, answer.id %><%= answer.content %>
+                  <input type="hidden" class="points" value="<%= answer.points %>" />
+                </label>
+                  
+              <% end %>
+              <div class="goodanswer">
+                <p>Good!</p>
+                <%= q.answers.find_by_points(1).discription %>
+              </div>
+              <div class="wronganswer">
+                <p>That is not the right answer!<br />
+                The right answers was:</p>
+                <%= q.answers.find_by_points(1).content %>
                 </div>
+              </div>
           </div>
         </div>
       </div>
