@@ -1,0 +1,172 @@
+@media (max-width: 768px) {
+/* overall */
+
+	body, .container-fluid {
+		padding: 0;
+	}
+
+	.container-fluid{
+		min-height: 100%;
+		max-height: 125%;
+	}
+
+	.topmenu_bg {
+	background-image: url('../assets/topmenu_bg.png');
+	background-repeat: no-repeat; 
+	height: 42px;
+	width: 83px;
+	float: left;
+	top: 0%;
+	left: 0%;
+	position: fixed;
+}
+
+	.home_btn {
+	background-image: url('../assets/home_button.png');
+	background-repeat: no-repeat; 
+	height: 31px;
+	width: 33px;
+	float: left;
+	margin: 4px 0 4px 6px;
+}
+
+	.help_btn {
+	background-image: url('../assets/button_help.png');
+	background-repeat: no-repeat; 
+	height: 31px;
+	width: 33px;
+	float: left;
+	margin:4px;
+}
+
+	.person_top_mob, .person_top_glow_mob  {
+		margin-top: 3%;
+		width: 50%;
+		float: right;
+	}
+
+	.person_bot_mob, .person_bot_glow_mob {
+		width: 50%;
+		margin-top: 3%;
+		float: left;
+	}
+
+	.next_btn_mob {
+		bottom: 0%;
+		left: 0%;
+		position: fixed;
+	}
+
+/* page 1 */
+
+	.page1_bg{
+		background-image: url('../assets/bg_jungle.png');
+		background-size: cover;
+		min-height: 100%;
+		max-height: 125%;
+		width: 100%;
+		position: absolute;
+		text-align: center;
+	}
+
+	.logo{
+		margin-top: 3%;
+		width: 67%;
+	}
+
+	.start_btn{
+		width: 57%;
+		margin-top: 1%;
+	}
+
+	.bobo_c{
+		width: 35%;
+		margin-top: 1%;
+}
+
+/* page 2 */
+
+	.page2_bg{
+		background-image: url('../assets/bg_bobo_home_mob.png');
+		background-size: cover;
+		min-height: 100%;
+		max-height: 125%;
+		width: 100%;
+		position: absolute;
+		text-align: center;
+	}
+
+	.speech_bubble_mob {
+		position: relative;
+		padding: 10%;
+		margin-left: 4% !important;
+		margin-top: 3%;
+		width: 90% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+	}
+
+	.speech_bubble_mob:before {
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: 74%;
+		border-style: solid;
+		border-width: 0 15px 15px;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 2;
+	}
+
+	.speech_bubble_mob:after {
+		content: "";
+		position: absolute;
+		bottom: -15px;
+		left: 20%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 1;
+	}
+
+/*page 3 */
+
+	.page3_bg{
+		background-image: url('../assets/bg_pick_dream_mob.png');
+		background-size: cover;
+		min-height: 100%;
+		max-height: 125%;
+		width: 100%;
+		position: absolute;
+		text-align: center;
+	}
+
+	.level1_mob{
+		margin-top: 15%;
+		width: 90%;
+	}
+
+	.level2_mob, .level3_mob{
+		margin-top: 2%;
+		width: 90%;
+	}
+
+/* page 4 intro Doc */
+
+	.page4_doc_bg {
+		background-image: url('../assets/bg_hospital_mob.png');
+		background-size: cover;
+		max-width: 960px;
+		height: 100%;
+		text-align: center;
+	}
+
+
+
+}

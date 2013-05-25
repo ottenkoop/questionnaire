@@ -1,0 +1,160 @@
+@media (min-width: 769px) {
+/* overall */
+
+	html, body, .container-fluid {
+		padding: 0;
+		background-color: black;
+	}
+
+	.container-fluid{
+		margin: auto !important;
+		max-width: 940px;
+	}
+
+	.topmenu_bg {
+	background-image: url('../assets/topmenu_bg.png');
+	background-repeat: no-repeat; 
+	height: 42px;
+	width: 83px;
+	float: left;
+}
+
+	.home_btn {
+	background-image: url('../assets/home_button.png');
+	background-repeat: no-repeat; 
+	height: 31px;
+	width: 33px;
+	float: left;
+	margin:4px 0 4px 6px;
+}
+
+	.help_btn {
+		background-image: url('../assets/button_help.png');
+		background-repeat: no-repeat; 
+		height: 31px;
+		width: 33px;
+		float: left;
+		margin:4px;
+}
+
+	.next_btn{
+		float: right !important;
+		margin-top: 319%;
+		margin-right: -43%;
+}
+
+
+	/* page 1 */
+
+	.page1_bg{
+		background-image: url('../assets/start_bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.logo{
+		margin-top: 2%;
+		width: 27%;
+	}
+
+	.start_btn{
+		width: 30%;
+		margin-top: 1%;
+	}
+
+	.bobo_c{
+		width: 20%;
+		margin-top: 1%;
+}
+
+/* page 2*/
+
+	.page2_bg {
+		background-image: url('../assets/bg_bobo_home.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+	.speech_bubble {
+		position: relative;
+		padding: 4%;
+		float: right !important;
+		margin-right: 2% !important;
+		margin-top: 3%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+	}
+
+	.speech_bubble:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 20%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 1;
+	}
+
+	.mom_bubble, .mom_bubble_glow{
+		width: 105%;
+		float: right !important;
+		margin-right: -71%;
+		margin-top: 51%;
+	}
+
+	.bobo_bubble, .bobo_bubble_glow{
+		width: 105%;
+		float: right !important;
+		margin-top: 55%;
+		margin-right: -49%;
+	}
+
+	.persons{
+		z-index: 1;
+		position: relative;
+	}
+
+
+/* page 3 */
+
+	.page3_bg {
+		background-image: url('../assets/bg_pick_dream.png');
+		background-size: cover;
+		max-width: 960px;
+		margin-left: 10%;
+		height: 100%;
+		text-align: center;
+	}
+
+	.level1, .level2, .level3 {
+		margin-left: 1%;
+	}
+
+	.picture{
+		margin-bottom: 45%;
+	}
+
+/* page 4 intro Doc */
+
+	.page4_doc_bg {
+		background-image: url('../assets/bg_pick_dream.png');
+		background-size: cover;
+		max-width: 960px;
+		margin-left: 10%;
+		height: 100%;
+		text-align: center;
+	}
+
+}
