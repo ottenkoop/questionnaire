@@ -7,7 +7,6 @@
 
 	.container-fluid{
 		min-height: 100%;
-		max-height: 125%;
 	}
 
 	.topmenu_bg {
@@ -63,7 +62,6 @@
 		background-image: url('../assets/bg_jungle.png');
 		background-size: cover;
 		min-height: 100%;
-		max-height: 125%;
 		width: 100%;
 		position: absolute;
 		text-align: center;
@@ -90,7 +88,6 @@
 		background-image: url('../assets/bg_bobo_home_mob.png');
 		background-size: cover;
 		min-height: 100%;
-		max-height: 125%;
 		width: 100%;
 		position: absolute;
 		text-align: center;
@@ -141,7 +138,6 @@
 		background-image: url('../assets/bg_pick_dream_mob.png');
 		background-size: cover;
 		min-height: 100%;
-		max-height: 125%;
 		width: 100%;
 		position: absolute;
 		text-align: center;
@@ -162,8 +158,9 @@
 	.page4_doc_bg {
 		background-image: url('../assets/bg_hospital_mob.png');
 		background-size: cover;
-		max-width: 960px;
-		height: 100%;
+		min-height: 100%;
+		width: 100%;
+		position: absolute;
 		text-align: center;
 	}
 
