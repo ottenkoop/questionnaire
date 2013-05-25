@@ -53,6 +53,7 @@
 	.next_btn_mob {
 		bottom: 0%;
 		left: 0%;
+		position: absolute;
 	}
 
 /* page 1 */
