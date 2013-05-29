@@ -10,10 +10,11 @@ Questionnaire::Application.routes.draw do
   match '/1' => 'pages#01. introduction/page1'
   match '/2' => 'pages#01. introduction/page2'
   match '/3' => 'pages#01. introduction/page3'
-  match '/4' => 'pages#02. teacher_story/page4'
-  match '/5' => 'pages#page5'
-  match '/6' => 'pages#page6'
-  match '/7' => 'pages#02. teacher_story/page7'
+  match '/4' => 'pages#02. doc_story/page4_doc'
+  match '/5' => 'pages#page5_doc'
+  match '/6' => 'pages#page6_doc'
+  match '/7' => 'pages#03. jungle_story/page7_jungle'
+  match '/8' => 'pages#03. jungle_story/page8_jungle'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

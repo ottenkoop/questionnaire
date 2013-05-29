@@ -46,29 +46,28 @@
 
 	/* page 1 */
 
-	.page1_bg{
+	.page1_bg {
 		background-image: url('../assets/start_bg.png');
 		background-repeat: no-repeat;
 		background-size: cover;
-		width: 100%;
 		text-align: center;
-		overflow: hidden;
 		position: relative;
 	}
 
-	.logo{
+	.logo {
 		margin-top: 2%;
 		width: 27%;
 	}
 
-	.start_btn{
+	.start_btn {
 		width: 30%;
 		margin-top: 1%;
 	}
 
-	.bobo_c{
+	.bobo_c {
 		width: 20%;
 		margin-top: 1%;
+		margin-bottom: 2%;
 }
 
 /* page 2*/
@@ -132,9 +131,6 @@
 	.page3_bg {
 		background-image: url('../assets/bg_pick_dream.png');
 		background-size: cover;
-		max-width: 960px;
-		margin-left: 10%;
-		height: 100%;
 		text-align: center;
 	}
 
@@ -143,18 +139,335 @@
 	}
 
 	.picture{
-		margin-bottom: 45%;
+		margin-bottom: 46%;
 	}
 
 /* page 4 intro Doc */
 
 	.page4_doc_bg {
-		background-image: url('../assets/bg_pick_dream.png');
+		background-image: url('../assets/bg_hospital.png');
+		background-repeat: no-repeat;
 		background-size: cover;
-		max-width: 960px;
-		margin-left: 10%;
-		height: 100%;
 		text-align: center;
+	}
+
+	.bobo_doc_sitting, bobo_doc_sitting_glow {
+		width: 59%;
+		bottom: 0%;
+		margin-top: 3%;
+		z-index: 0;
+		position: relative;
+	}
+
+	.hosp_bird, .host_bird_glow {
+		float: right;
+		width: 58%;
+		margin-top: -19%;
+		margin-right: -55%;
+		z-index: 0;
+	}
+
+	.hosp_next_btn {
+		margin-top: 225%;
+		float: right;
+		margin-right: -43%;
+	}
+
+	.speech_bubble_bird {
+		position: relative;
+		padding: 4%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+	}
+
+	.speech_bubble_bird:after {
+		content: "";
+		position: absolute;
+		top: 55%;
+		right: -3%;
+		border-style: solid;
+		border-width: 15px 0 15px 15px;
+		border-color: transparent #FFFFFF;
+		display: block;
+
+	}
+
+	.bubble_hosp_bobo {
+		float: left !important;
+		margin-top: 17%;
+		margin-left: 10% !important;
+	}
+
+	.bubble_hosp_bird {
+		float: right !important;
+		margin-top: 17%;
+		margin-right: 27% !important;
+	}
+
+
+/*	page5_doc */
+
+	.page5_bg {
+		background-image: url('../assets/bg_jungle.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+
+
+/* page 7 Jungle-dream: 1. screen*/
+
+
+	.jungle_bg {
+		background-image: url('/assets/bg_jungle_desktop.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+
+	.jungle_monkey, .jungle_monkey_glow{
+		float: right !important;
+		margin-top: 58%;
+		width: 70%;
+	}
+
+
+	.jungle_bobo, .jungle_bobo_glow{
+		float: right !important;
+		margin-top: 10%;
+		width: 65%;
+	}
+
+	.jungle_next_btn{
+		float: right !important;
+		margin-top: 318%;
+		margin-right: -43%;
+	}
+
+
+	.jungle_speech_bubble {
+		position: relative;
+		padding: 4%;
+		margin-right: 2% !important;
+		margin-top: 3%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+		z-index: 10;
+	}
+
+	.jungle_speech_bubble:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 40%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 9;
+	}
+
+	.jungle_speech_bubble2 {
+		position: relative;
+		padding: 4%;
+		margin-left: 50% !important;
+		margin-right: 2% !important;
+		margin-top: 3%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+		z-index: 10;
+	}
+
+	.jungle_speech_bubble2:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 22%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 8;
+	}
+
+
+/* Jungle-dream: 2. screen*/
+	
+	.jungle_mosquito, .jungle_mosquito_glow{
+		float: right !important;
+		margin-top: 60%;	
+	}
+
+	.jungle_monkey2, .jungle_monkey_glow2{
+		float: right !important;
+		margin-top: 38%;
+		width: 70%;
+	}
+
+	.jungle_next_btn2{
+		float: right !important;
+		margin-top: 318%;
+		margin-right: -157%;
+	}
+
+
+	.jungle_speech_bubble3 {
+		position: relative;
+		padding: 4%;
+		margin-right: 2% !important;
+		margin-top: 3%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+		z-index: 10;
+	}
+
+	.jungle_speech_bubble3:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 40%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 9;
+	}
+
+	.jungle_speech_bubble4 {
+		position: relative;
+		padding: 4%;
+		margin-left: 35% !important;
+		margin-right: 2% !important;
+		margin-top: 3%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+		z-index: 10;
+	}
+
+	.jungle_speech_bubble4:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 22%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 8;
+	}
+
+
+
+
+/* Jungle-dream: 3. screen*/
+
+	.jungle_bg_mosquito {
+		background-image: url('../assets/bg_jungle_mosquito_desktop.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+	.jungle_next_btn3{
+		float: right !important;
+		margin-top: 319%;
+		margin-right: -100%;
+		z-index: 20;
+		position: relative;
+	}
+
+
+	.jungle_lion, .jungle_lion_glow{
+		float: right !important;
+		margin-top: 20%;	
+	}
+
+	.jungle_bobo3, .jungle_bobo_glow3{
+		float: right !important;
+		margin-top: 30%;
+		width:75%;
+	}
+
+
+	.jungle_speech_bubble5 {
+		position: relative;
+		padding: 4%;
+		margin-right: 2% !important;
+		margin-top: 3%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+		z-index: 10;
+	}
+
+	.jungle_speech_bubble5:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 30%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 9;
+	}
+
+	.jungle_speech_bubble6 {
+		position: relative;
+		padding: 4%;
+		margin-left: 45% !important;
+		margin-right: 2% !important;
+		margin-top: 3%;
+		width: 45% !important;
+		background: #FFFFFF;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		opacity: 0.9;
+		z-index: 10;
+	}
+
+	.jungle_speech_bubble6:after {
+		content: "";
+		position: absolute;
+		bottom: -12px;
+		left: 22%;
+		border-style: solid;
+		border-width: 15px 15px 0;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 8;
 	}
 
 }

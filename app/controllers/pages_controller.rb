@@ -4,13 +4,13 @@ def page0
 		reset_session
 end
 
-def page5
+def page5_doc
 		@survey = Survey.find_by_name("School")
 		@result = Result.new
 		@result.answer_results.build
 end
 
-def page6
+def page6_doc
 	@result = Result.find(session[:result_id])
 	session[:dream1] = true
 end

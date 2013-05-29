@@ -1,37 +1,69 @@
-
-  <div class="container-fluid" id="chooseadream_bg">
+<div class="container-fluid page3_bg">
     <div class="row-fluid">
-      <div id="tchr_thumb" class="span4 dream">
+      <div class="span12 topmenu_bg">
+        <div class="">
+          <a href="/" class="home_btn"></a>
+        </div>
+          <div class="">
+            <a href="#" class="help_btn"></a>
+          </div>
+      </div>
+    </div>
+
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="row-fluid visible-phone">
+          
+        <% if session[:dream1] %>
+          <img src="assets/level1_finished_mob.png" class="level1_mob" />
+        <% else %>
+          <a href="/4">
+            <img src="assets/level1_mob.png" class="level1_mob" />
+          </a>
+        <% end %> 
+        
+        <% if session[:dream2] %>
+          <img src="assets/level2_finished_mob.png" class="level1_mob" />
+        <% else %>
+          <a href="/7">
+            <img src="assets/level2_mob.png" class="level1_mob" />
+          </a>
+        <% end %> 
+
+        <% if session[:dream3] %>
+          <img src="assets/level3_finished_mob.png" class="level1_mob" />
+        <% else %>
+          <a href="#">
+            <img src="assets/level3_mob.png" class="level1_mob" />
+          </a>
+        <% end %> 
+
+      </div>
+
+      <div class="row-fluid hidden-phone">
         <a href="/4">
-          Dream 1</a>
-          <% if session[:dream1] %>
-            <p>Session1</p>
-          <% else %>
-            <p></p>
-          <% end %>
-
-      </div>
-      <div id="dctr_thumb" class="span4 dream">
-        <a href="#">Dream 2</a>
-          <% if session[:dream2] %>
-            <p>Session2</p>
-          <% else %>
-            <p></p>
-          <% end %>
-
-      </div>
-      <div id="xplr_thumb" class="span4 dream">
-        <a href="#">Dream 3</a>
-          <% if session[:dream3] %>
-            <p>Session3</p>
-          <% else %>
-            <p></p>
-          <% end %>
+        <% if session[:dream1] %>
+          <img src="assets/level1_finished.png" class="level1" />
+        <% else %>
+          <img src="assets/level1.png" class="level1" />
+        <% end %> 
+        </a>
+        <a href="/7">
+        <% if session[:dream2] %>
+          <img src="assets/level2_finished.png" class="level2" />
+        <% else %>
+          <img src="assets/level2.png" class="level2" />
+        <% end %> 
+        </a>
+        <a href="#">
+        <% if session[:dream3] %>
+          <img src="assets/level3_finished.png" class="level3" />
+        <% else %>
+          <img src="assets/level3.png" class="level3" />
+        <% end %> 
+        </a>
       </div>
     </div>
-    <div class="row-fluid">
-      <div class="span3 backbutton">
-        <a href="/2"><img src="assets/back_button.png" alt="Back" width="104" height="41"></a>
-      </div>
-    </div>
+    <div class="span12 picture"></div>
   </div>
+</div>

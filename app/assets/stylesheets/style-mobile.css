@@ -7,6 +7,7 @@
 
 	.container-fluid{
 		min-height: 100%;
+		max-width: 100%;
 	}
 
 	.topmenu_bg {
@@ -54,6 +55,8 @@
 		bottom: 0%;
 		left: 0%;
 		position: absolute;
+		width: 100%;
+		height: 7%;
 	}
 
 /* page 1 */
@@ -165,5 +168,146 @@
 	}
 
 
+ /* page 5 question_doc */
+
+ 	.page5_bg {
+ 		background-image: url('../assets/bg_jungle.png');
+		background-size: cover;
+		width: 100%;
+		text-align: center;
+ 	}
+
+	.radio-toolbar {
+		margin-left: 0!important;
+		text-align: left;
+	}
+
+	.radio-toolbar input[type="radio"] {
+    display:none;
+	}
+
+	.radio-toolbar label {
+    padding: 3px 0 3px 0;
+		-moz-box-shadow: inset 0px 1px 3px rgba(230,230,230,.6);
+		-webkit-box-shadow: inset 0px 1px 3px rgba(230,230,230,.6);
+		box-shadow: inset 0px 1px 3px rgba(230,230,230,.6);
+		color: #444;
+		margin: 0!important;
+		padding-left: 0.5%;
+	}
+
+	.radio-toolbar input[type="radio"]:checked + label {
+		-moz-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+		-webkit-box-shadow: inset 0px 0px 5px rgba(0,0,0,0.9);
+		box-shadow: inset 0px 0px 5px rgba(0,0,0,.9);
+ 	  background: #a2d021; /* Old browsers */
+		background: -moz-linear-gradient(top,  #a2d021 0%, #54970b 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2d021), color-stop(100%,#54970b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #a2d021 0%,#54970b 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2d021', endColorstr='#54970b',GradientType=0 ); /* IE6-9 */
+	}
+
+	.next_q {
+		background: #a2d021; /* Old browsers */
+		background: -moz-linear-gradient(top,  #a2d021 0%, #54970b 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2d021), color-stop(100%,#54970b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #a2d021 0%,#54970b 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2d021', endColorstr='#54970b',GradientType=0 ); /* IE6-9 */
+
+		-moz-box-shadow: 0px -2px 5px rgba(230,230,230,0.9);
+		-webkit-box-shadow: 0px -2px 5px rgba(230,230,230,0.8);
+		box-shadow: 0px 2px 2px rgba(0,0,0,.8);
+
+		margin-left: 0 !important;
+	}
+
+	.next_q h5 {
+		color: white;
+		text-shadow: 0px 2px #000;
+		text-decoration: none;
+	}
+
+	.next_btn0:hover, .next_btn1:hover {
+		text-decoration: none;
+	}
+
+	.quiz_bobo {
+		width: 50%;
+		margin-top: 2%;
+		z-index: 1;
+		position: relative;
+	}
+
+	#quiz_bg {
+		background-color: white;
+		margin-left: 0;
+		position: fixed;
+		bottom: 0%;
+		z-index: 20;
+	}
+
+	.s_bubble_quiz {
+		position: relative;
+		width: 82%;
+		padding: 1%;
+		background: #FFFFFF;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		margin-left: 7%;
+		margin-bottom: 30%;
+		z-index: 10;
+	}
+
+	.s_bubble_quiz:after {
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: 47.5%;
+		border-style: solid;
+		border-width: 0 15px 15px;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 11;
+	}
+
+	.bg_change {
+		padding-bottom: 55%;
+		margin-top: 7%;
+	}
+
+	.goodanswer, .wronganswer {
+		margin-bottom: 9%;
+	}
+
+
+/* Jungle-dream: 1. screen*/
+
+	.jungle_bg {
+		background-image: url('../assets/bg_jungle.png');
+		background-size: cover;
+		min-height: 100%;
+		width: 100%;
+		position: absolute;
+		text-align: center;
+	}
+
+/* Jungle-dream: 2. screen*/
+
+	.jungle_bg_mosquito {
+		background-image: url('../assets/bg_jungle.png');
+		background-size: cover;
+		min-height: 100%;
+		width: 100%;
+		position: absolute;
+		text-align: center;
+	}
 
 }
