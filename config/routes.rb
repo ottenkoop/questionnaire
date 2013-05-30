@@ -15,6 +15,7 @@ Questionnaire::Application.routes.draw do
   match '/6' => 'pages#page6_doc'
   match '/7' => 'pages#03. jungle_story/page7_jungle'
   match '/8' => 'pages#03. jungle_story/page8_jungle'
+  match '/9' => 'pages#03. jungle_story/page9_jungle'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

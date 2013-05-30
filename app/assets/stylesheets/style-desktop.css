@@ -168,9 +168,9 @@
 	}
 
 	.hosp_next_btn {
-		margin-top: 225%;
-		float: right;
-		margin-right: -43%;
+		margin-top: 33%;
+		float: right !important;
+		margin-right: -0.5%;
 	}
 
 	.speech_bubble_bird {
