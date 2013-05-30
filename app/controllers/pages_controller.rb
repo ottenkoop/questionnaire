@@ -5,7 +5,7 @@ def page0
 end
 
 def page5_doc
-		@survey = Survey.find_by_name("School")
+		@survey = Survey.find_by_name("Doctor")
 		@result = Result.new
 		@result.answer_results.build
 end
