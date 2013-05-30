@@ -1,14 +1,24 @@
 $(document).ready(() ->
 	conversation =
 		talks: [
+			{'speaker': 'bird'
+			'message': 'You are in the city clinic, you are a doctor.'}
+			,
+			{'speaker': 'bird'
+			'message': 'There are three patients in the waiting room.'}
+			,
+			{'speaker': 'bird'
+			'message': 'You have to help them.'}
+			,
 			{'speaker': 'bobo'
-			'message': 'Where am I?'}
+			'message': 'But how can I help them?'}
 			,
 			{'speaker': 'bird'
-			'message': 'Fuck you.'}
+			'message': 'Just do your best.'}
 			,
 			{'speaker': 'bird'
-			'message': 'I SAID: Fuck you.'}
+			'message': 'I am sure you will do fine.'}
+
 		]
 
 	console.log(conversation)
@@ -18,13 +28,16 @@ $(document).ready(() ->
 
 	conversation_position = 0
 
-	total_talks = conversation.talks.length
+	total_talks = (conversation.talks.length)
+
+	console.log(total_talks)
 
 	$('.hosp_next').on('click', (e) ->
 
-		if(conversation_position == total_talks)
-			# SHIT UITVOEREN VANWEGE EINDE
-			console.log('einde')
+		if conversation_position == total_talks
+			$('.hosp_next').hide()
+			$('.hosp_next_6').show()
+			
 			return false
 
 		speaker = conversation.talks[conversation_position].speaker
@@ -42,7 +55,7 @@ $(document).ready(() ->
 
 		conversation_position++
 
-		e.preventDefault
+		e.preventDefault()
 	)
 
 	# $('	.hosp_con_bobo_2,
