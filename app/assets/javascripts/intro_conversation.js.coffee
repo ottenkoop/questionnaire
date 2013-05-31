@@ -5,7 +5,7 @@ $(document).ready(() ->
 			'message': 'She went to the doctor and was diagnosed with HIV.'}
 			,
 			{'speaker': 'bobo'
-			'message': 'That sounds bad, will she be alrigth?'}
+			'message': 'That sounds bad, will she be alright?'}
 			,
 			{'speaker': 'mom'
 			'message': 'Yes. She recieved a medicine that will help to control the virus'}
