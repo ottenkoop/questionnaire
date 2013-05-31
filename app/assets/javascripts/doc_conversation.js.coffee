@@ -2,10 +2,10 @@ $(document).ready(() ->
 	conversation =
 		talks: [
 			{'speaker': 'bird'
-			'message': 'You are in the city clinic, you are a doctor.'}
+			'message': 'You are in the city clinic, you are a doctor'}
 			,
 			{'speaker': 'bird'
-			'message': 'There are three patients in the waiting room.'}
+			'message': 'There are three patients in the waiting room'}
 			,
 			{'speaker': 'bird'
 			'message': 'You have to help them.'}
@@ -24,7 +24,11 @@ $(document).ready(() ->
 	console.log(conversation)
 
 	$('.cloud_hosp').not(':first').hide()
-	$('.hosp_next_6').hide()
+	$('	.hosp_next_6,
+			.bobo_doc_sitting,
+			.bobo_doc_mob,
+		 	.hosp_bird_glow,
+		 	.hosp_bird_glow_mob').hide()
 
 	conversation_position = 0
 
@@ -32,30 +36,46 @@ $(document).ready(() ->
 
 	console.log(total_talks)
 
-	$('.hosp_next').on('click', (e) ->
-
-		if conversation_position == total_talks
-			$('.hosp_next').hide()
-			$('.hosp_next_6').show()
-			
-			return false
+	$('.hosp_next, .hosp_next_btn_mob').on('click', (e) ->
 
 		speaker = conversation.talks[conversation_position].speaker
 		message = conversation.talks[conversation_position].message
 
-		if(speaker == 'bobo')
-			$('.cloud_hosp').hide()
-			$('.bubble_hosp_bobo .hosp_con').text(message)
-			$('.bubble_hosp_bobo').show()
+		if (speaker == 'bobo')
+			$('	.cloud_hosp,
+					.hosp_bird_glow,
+					.bobo_doc_sitting,
+					.bobo_doc_mob,
+					.hosp_bird_glow_mob').hide()
+			$('	.bubble_hosp_bobo .hosp_con').text(message)
+			$('	.bubble_hosp_bobo,
+					.bobo_doc_sitting_glow,
+					.hosp_bird,
+					.bobo_doc_glow_mob,
+					.hosp_bird_mob').show()
 
 		else 
-			$('.cloud_hosp').hide()
-			$('.bubble_hosp_bird .hosp_con').text(message)
-			$('.bubble_hosp_bird').show()
+			$('	.hosp_bird,
+					.hosp_bird_mob,
+			 		.cloud_hosp,
+			 		.bobo_doc_sitting_glow,
+			 		.bobo_doc_glow_mob').hide()
+			$('	.bubble_hosp_bird .hosp_con').text(message)
+			$('	.hosp_bird_glow, 
+					.bubble_hosp_bird,
+					.bobo_doc_sitting,
+					.bobo_doc_mob,
+					.hosp_bird_glow_mob').show()
 
 		conversation_position++
 
 		e.preventDefault()
+
+		if conversation_position == (total_talks)
+			$('.hosp_next_6').show()
+			$('.hosp_next').hide()
+			
+			return false
 	)
 
 	# $('	.hosp_con_bobo_2,

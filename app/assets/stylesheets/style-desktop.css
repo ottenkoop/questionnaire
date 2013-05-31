@@ -4,6 +4,7 @@
 	html, body, .container-fluid {
 		padding: 0;
 		background-color: black;
+		font-family: 'Bubblegum Sans', cursive;
 	}
 
 	.container-fluid{
@@ -40,7 +41,7 @@
 	.next_btn{
 		float: right !important;
 		margin-top: 319%;
-		margin-right: -43%;
+		margin-right: -57%;
 }
 
 
@@ -79,9 +80,9 @@
 		text-align: center;
 	}
 
-	.speech_bubble {
+	.speech_bubble, .speech_bubble_mom {
 		position: relative;
-		padding: 4%;
+		padding: 4% 1% 4% 1%;
 		float: right !important;
 		margin-right: 2% !important;
 		margin-top: 3%;
@@ -93,7 +94,7 @@
 		opacity: 0.9;
 	}
 
-	.speech_bubble:after {
+	.speech_bubble:after, .speech_bubble_mom:after {
 		content: "";
 		position: absolute;
 		bottom: -12px;
@@ -104,6 +105,10 @@
 		display: block;
 		width: 0;
 		z-index: 1;
+	}
+
+	.speech_bubble_mom:after{
+		left: 84%;
 	}
 
 	.mom_bubble, .mom_bubble_glow{
@@ -123,6 +128,16 @@
 	.persons{
 		z-index: 1;
 		position: relative;
+	}
+
+	.bubble_intro_mom {
+		float: right !important;
+		margin-right: 15% !important;
+	}
+
+	.bubble_intro_bobo {
+		float: right !important;
+		margin-right: 20% !important;
 	}
 
 
@@ -151,7 +166,7 @@
 		text-align: center;
 	}
 
-	.bobo_doc_sitting, bobo_doc_sitting_glow {
+	.bobo_doc_sitting, .bobo_doc_sitting_glow {
 		width: 59%;
 		bottom: 0%;
 		margin-top: 3%;
@@ -159,7 +174,7 @@
 		position: relative;
 	}
 
-	.hosp_bird, .host_bird_glow {
+	.hosp_bird, .hosp_bird_glow {
 		float: right;
 		width: 58%;
 		margin-top: -19%;
