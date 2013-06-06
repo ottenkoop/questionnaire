@@ -58,10 +58,12 @@
     </div>
     <div class="discription">
       <div class="goodanswer">
-              <%= q.answers.find_by_points(1).content %>
+        <p>That is the right answer because:</p>
+        <p><%= q.discription %></p>
       </div>
       <div class="wronganswer">
-            <%= q.answers.find_by_points(1).content %>
+        <h5><%= q.answers.find_by_points(1).content %></h5>
+        <p>"<%= q.discription %>"</p>
       </div>
     </div>
   </div> <!-- question-->

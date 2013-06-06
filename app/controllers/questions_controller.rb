@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+before_filter :logged_in!
 
 def edit
     @question = Question.find(params[:id])

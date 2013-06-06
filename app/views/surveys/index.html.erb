@@ -1,4 +1,14 @@
-<% @surveys.each do |s| %>
+<div class="container">
+	<div class="logout-btn">
+		<%= link_to "Log out", log_out_path %>
+	</div>
+		<div class="stories">
+			<% @surveys.each do |s| %>
 
-<%= link_to s.name, s %><br />
-<% end %>
+			<div class="story">
+				<p><%= link_to s.name, s, :class => "link" %></p>
+			</div>
+
+			<% end %>
+		</div>
+</div>

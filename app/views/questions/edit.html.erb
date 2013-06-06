@@ -1,22 +1,21 @@
-<%= form_for @question do |q| %>
+ <div class="back-btn">
+ 	<a href="/surveys"><p class="submit"><input type="submit" name="commit" value="Back"></p></a>
+ </div>
 
-	<%= q.label :content, "Question" %>
-	<%= q.text_area :content, :rows => 2 %></p>
+ <div class="question-blocks edit-question">
+	<%= form_for @question do |q| %>
+		<h2>Question<%= q.text_field :content %></h2>
+		<h1>Answers:</h1>
+		<%= q.fields_for :answers do |a| %>
+			<%= a.text_field :content %>
+			<%= a.select(:points, [['Wrong', 0], ['Right', 1]]) %>
+		<% end %>
 
-	<%= q.fields_for :answers do |a| %>
-	  
-	<%= a.label :content, "Answer" %>
-	<%= a.text_field :content %>
-	<%= a.label :discription, "Uitleg:" %>
-	<%= a.text_field :discription %>
-	<%= a.select :points, options_for_select([["Choose the Right Answer"], "0", "1"], params[:options]) %></br>
+		<%= q.label :discription, "The answer given is wrong/good because ..." %>
+		<%= q.text_area :discription, :rows => 2 %>
 
-	 
-	<% end %><br />
-	<%= q.submit %>
-<% end %>
-
-<%= @question.survey_id %>
-
+	<p><%= q.submit %></p>
+	<% end %>
+</div>
 
 <br /><br />

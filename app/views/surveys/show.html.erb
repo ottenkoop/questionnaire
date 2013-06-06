@@ -1,24 +1,35 @@
-	
-	<p>Category of the Survey:</p>
-	<%= @survey.name %></br>
+<div class="container">
+<div class="back-btn">
+	<a href="/surveys"><p class="submit"><input type="submit" name="commit" value="Back"></p></a>
+</div>
 
+<div class="logout-btn">
+	<a href="login.html"><p class="submit"><input type="submit" name="commit" value="Logout"></p></a>
+</div>
 
-<ol>
-	<% @survey.questions.each do |q| %>
-	
-	<li><%= q.content %></li>
-			<%= link_to 'edit', edit_question_path(q.id) %>
-			<%= link_to 'delete', question_path(q.id), confirm: "Are you sure?", method: :delete %>
-		<ul>
-		<% q.answers.each do |a| %>
+<div class="header-questions">
+  <h1><%= @survey.name %></h1>
+</div>
 
-		<li><%= a.content %>
-			<%= a.points %></li></br>
+<% @survey.questions.each do |q| %>
+<div class="question-blocks">
+	<div class="edit-btn">
+		<p class="submit">
+			<%= link_to (edit_question_path(q.id)) do %>
+				<input type="submit" name="commit" value="Edit">
 			<% end %>
-		</ul>
-
-	
+			<input type="submit" name="commit" value="Delete">
+		</p>
+	</div>
+	<h2><%= q.content %></h2><br />
+	<% q.answers.each do |a| %>
+		<h3><%= a.content %></h3>
 	<% end %>
-</ol>
-
-<%= link_to 'new', {:controller => 'questions', :action => 'new', :id => @survey.id } %>
+</div>	
+<% end %>
+<div class="new-btn">
+	<%= link_to ({:controller => 'questions', :action => 'new', :id => @survey.id}) do %>
+	<p class="submit"><input type="submit" name="commit" value="Add New Question"></p>
+	<% end %>
+</div>
+</div>

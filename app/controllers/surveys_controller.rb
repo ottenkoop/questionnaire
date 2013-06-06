@@ -1,7 +1,8 @@
 class SurveysController < ApplicationController
+  before_filter :logged_in!
 
 def index
-	@surveys = Survey.all
+  	 @surveys = Survey.all
 end
 
 def edit

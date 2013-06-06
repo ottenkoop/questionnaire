@@ -1,9 +1,14 @@
 Questionnaire::Application.routes.draw do
 
+  get "password_resets/new"
+
   resources :surveys
   resources :results
   resources :pages
   resources :questions
+  resources :users
+  resources :sessions
+  resources :password_resets
 
   root to: 'pages#page0'
 
@@ -13,9 +18,17 @@ Questionnaire::Application.routes.draw do
   match '/4' => 'pages#02. doc_story/page4_doc'
   match '/5' => 'pages#page5_doc'
   match '/6' => 'pages#page6_doc'
-  match '/7' => 'pages#03. jungle_story/page7_jungle'
-  match '/8' => 'pages#03. jungle_story/page8_jungle'
-  match '/9' => 'pages#03. jungle_story/page9_jungle'
+  match '/7' => 'pages#04. jungle_story/page7_jungle'
+  match '/8' => 'pages#04. jungle_story/page8_jungle'
+  match '/9' => 'pages#04. jungle_story/page9_jungle'
+  match '/10' => 'pages#04. jungle_story/page10_jungle'
+  match '/11' => 'pages#04. jungle_story/page11_jungle'
+  match '/12' => 'pages#03. teach_story/page12_teach'
+  match '/13' => 'pages#03. teach_story/page13_teach'
+  match '/14' => 'pages#03. teach_story/page14_teach'
+
+  get '/log_in' => "sessions#new", as: 'log_in'
+  get '/log_out' => "sessions#destroy", as: 'log_out'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -2,15 +2,16 @@
 #
 # Table name: questions
 #
-#  id         :integer          not null, primary key
-#  content    :string(255)
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  survey_id  :integer
+#  id          :integer          not null, primary key
+#  content     :string(255)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  survey_id   :integer
+#  discription :string(255)
 #
 
 class Question < ActiveRecord::Base
-  attr_accessible :content, :answers_attributes, :survey_id
+  attr_accessible :content, :answers_attributes, :survey_id, :discription
 
   belongs_to :survey
   has_many :answers
