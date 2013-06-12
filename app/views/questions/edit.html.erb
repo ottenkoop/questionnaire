@@ -1,3 +1,4 @@
+<div class="container">
  <div class="back-btn">
  	<a href="/surveys"><p class="submit"><input type="submit" name="commit" value="Back"></p></a>
  </div>
@@ -12,10 +13,12 @@
 		<% end %>
 
 		<%= q.label :discription, "The answer given is wrong/good because ..." %>
-		<%= q.text_area :discription, :rows => 2 %>
+		<%= q.text_area :discription, :rows => 5 %>
 
 	<p><%= q.submit %></p>
 	<% end %>
 </div>
 
 <br /><br />
+
+</div>

@@ -23,7 +23,7 @@ module Questionnaire
     }
 
     config.action_mailer.default_url_options = {
-      :host => "http://149.210.131.239/"
+      :host => "localhost:3000"
     }
 
     # Settings in config/environments/* take precedence over those specified here.

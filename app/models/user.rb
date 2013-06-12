@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation
   has_secure_password
   validates_presence_of :password, :on => :create
+  validates_format_of :email, :with => /^(|(([A-Za-z0-9]+_+)|([A-Za-z0-9]+\-+)|([A-Za-z0-9]+\.+)|([A-Za-z0-9]+\++))*[A-Za-z0-9]+@((\w+\-+)|(\w+\.))*\w{1,63}\.[a-zA-Z]{2,6})$/i
   before_create { generate_token(:auth_token) }
   
   def generate_token(column)

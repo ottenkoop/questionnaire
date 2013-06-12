@@ -3,9 +3,13 @@ class PasswordResetsController < ApplicationController
   end
 
   def create
-  user = User.find_by_email(params[:email])
-  user.send_password_reset if user
-  redirect_to log_in_path, :notice => "Email sent with password reset instructions."
+	  user = User.find_by_email(params[:email])
+	  if user
+	  		user.send_password_reset 
+	  		redirect_to log_in_path, :notice => "Email sent with password reset instructions. Please check your spam folder also!"
+	  else
+	  	redirect_to log_in_path, :alert => "email adress does not excist"
+	  end
 	end
 
 	def edit

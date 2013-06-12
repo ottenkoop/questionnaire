@@ -40,7 +40,7 @@
 
 <div class="row-fluid" id ="quiz_bg">
 
-  <% @survey.questions.each do |q| %>
+  <% @survey.questions.shuffle.each do |q| %>
 
   <div class="span12 question">
     <h5><%= q.content %></h5>
@@ -48,7 +48,7 @@
       <%= r.fields_for :answer_results do |a| %>
       
     <div class="span12 radio-toolbar"> 
-      <% q.answers.each do |answer| %>
+      <% q.answers.shuffle.each do |answer| %>
         <label class="answercontent">
           <%= a.radio_button :answer_id, answer.id %>
             <%= a.label :answer_id, answer.content %>

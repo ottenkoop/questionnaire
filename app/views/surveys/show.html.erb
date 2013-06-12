@@ -1,10 +1,10 @@
 <div class="container">
 <div class="back-btn">
-	<a href="/surveys"><p class="submit"><input type="submit" name="commit" value="Back"></p></a>
+	<%= link_to "Back", surveys_path, class: "logout" %>
 </div>
 
 <div class="logout-btn">
-	<a href="login.html"><p class="submit"><input type="submit" name="commit" value="Logout"></p></a>
+	<%= link_to "Log out", log_out_path, class: "logout" %>
 </div>
 
 <div class="header-questions">
@@ -15,10 +15,9 @@
 <div class="question-blocks">
 	<div class="edit-btn">
 		<p class="submit">
-			<%= link_to (edit_question_path(q.id)) do %>
-				<input type="submit" name="commit" value="Edit">
-			<% end %>
-			<input type="submit" name="commit" value="Delete">
+			<%= link_to "Edit", (edit_question_path(q.id)), class: "logout" %>
+
+			<%= link_to("Delete", q, :method => :delete, :confirm => "Really?", :class => 'logout') %>
 		</p>
 	</div>
 	<h2><%= q.content %></h2><br />
