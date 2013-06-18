@@ -1,14 +1,14 @@
-<% if @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.75 %>
-	<p>Thats good</p>
+<% if @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 %>
+	<p><% session[:dream1] = true %> True</p>
 <% else %>
-	<p>Thats wrong</p>
+	<p></p>
 <% end %>
 
 <%= debug @result.answers.count.to_f %> 
 
 <%= debug @result.answers.sum(:points).to_f + 2 %>
 
-<%= debug @result.answers.sum(:points).to_f + 2 / @result.answers.count.to_f >= 0.75 %>
+<%= debug @result.answers.sum(:points).to_f + 2 / @result.answers.count.to_f >= 0.60 %>
 
     <div class="row-fluid">
       <div class="span3 offset9 button ss-button">

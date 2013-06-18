@@ -2,10 +2,16 @@ $(document).ready(() ->
 	conversation =
 		talks: [
 			{'speaker': 'bird'
-			'message': 'You are in the city clinic, you are a doctor'}
+			'message': 'You are at the city clinic. You are a doctor.'}
+			,
+			{'speaker': 'bobo'
+			'message': 'Who are you?'}
 			,
 			{'speaker': 'bird'
-			'message': 'There are three patients in the waiting room'}
+			'message': 'I am Cheeko. I am here to help you.'}
+			,
+			{'speaker': 'bird'
+			'message': 'There are three patients in the waiting room.'}
 			,
 			{'speaker': 'bird'
 			'message': 'You have to help them.'}
@@ -21,7 +27,6 @@ $(document).ready(() ->
 
 		]
 
-	console.log(conversation)
 
 	$('.cloud_hosp').not(':first').hide()
 	$('	.hosp_next_6,
@@ -33,8 +38,6 @@ $(document).ready(() ->
 	conversation_position = 0
 
 	total_talks = (conversation.talks.length)
-
-	console.log(total_talks)
 
 	$('.hosp_next, .hosp_next_btn_mob').on('click', (e) ->
 

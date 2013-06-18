@@ -41,26 +41,28 @@
       </div>
 
       <div class="row-fluid hidden-phone">
-        <a href="/4">
         <% if session[:dream1] %>
           <img src="assets/level1_finished.png" class="level1" />
-        <% else %>
-          <img src="assets/level1.png" class="level1" />
-        <% end %> 
-        </a>
         <a href="/7">
-        <% if session[:dream2] %>
-          <img src="assets/level2_finished.png" class="level2" />
-        <% else %>
           <img src="assets/level2.png" class="level2" />
-        <% end %> 
         </a>
-        <a href="#">
-        <% if session[:dream3] %>
-          <img src="assets/level3_finished.png" class="level3" />
+          <img src="assets/level3_locked.png" class="level3" />
+         
+          <% else if session[:dream2] %>
+            <img src="assets/level1_finished.png" class="level1" />
+            <img src="assets/level2_finished.png" class="level2" />
+          <a href="/10">          
+            <img src="assets/level3.png" class="level3" />
+          </a>
+        
         <% else %>
-          <img src="assets/level3_finished.png" class="level3" />
-        <% end %> 
+        <a href="/4">
+          <img src="assets/level1.png" class="level1" />
+        </a>
+          <img src="assets/level2_locked.png" class="level2" />
+          <img src="assets/level3_locked.png" class="level3" />
+          <% end %>
+        <% end %>
         </a>
       </div>
     </div>

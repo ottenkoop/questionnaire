@@ -20,11 +20,9 @@ $(document).ready(() ->
 			'message': 'But....'}
 			,
 			{'speaker': 'mom'
-			'message': 'We will visit her tomorrow, I promise!'}
+			'message': 'We will visit her tomorrow, I promise!' }
 
 		]
-
-	console.log(conversation)
 
 	$('.cloud_intro').not(':first').hide()
 	$('	.intro_next_1,

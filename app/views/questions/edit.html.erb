@@ -1,24 +1,43 @@
-<div class="container">
+<html class="whitecmsbackground">
+	<script>
+		function updateCountdown() {
+	    var remaining = 100 - jQuery('.message').val().length;
+	    jQuery('.countdown').text(remaining + ' characters remaining.');
+		}
+
+		jQuery(document).ready(function($) {
+	    updateCountdown();
+	    $('.message').change(updateCountdown);
+	    $('.message').keyup(updateCountdown);
+		});
+	</script>
+
+<body class="whitecmsbackground">
  <div class="back-btn">
  	<a href="/surveys"><p class="submit"><input type="submit" name="commit" value="Back"></p></a>
  </div>
 
  <div class="question-blocks edit-question">
 	<%= form_for @question do |q| %>
-		<h2>Question<%= q.text_field :content %></h2>
+		<h2>Question<%= q.text_field :content, :class => 'message', :maxlength => '100', :required => true %></h2><span class="countdown"></span>
 		<h1>Answers:</h1>
 		<%= q.fields_for :answers do |a| %>
-			<%= a.text_field :content %>
+			<%= a.text_field :content, :maxlength => '75', :required => true %>
 			<%= a.select(:points, [['Wrong', 0], ['Right', 1]]) %>
 		<% end %>
 
 		<%= q.label :discription, "The answer given is wrong/good because ..." %>
-		<%= q.text_area :discription, :rows => 5 %>
-
+		<%= q.text_area :discription, :class => 'cmstextfield', :rows => 5, :maxlength => '150', :required => true %>
+		<div class="legendaedit">
+			<ul>
+				<li>Answers can have up to 75 characters.</li>
+				<li>The description is limited to 150 characters.</li>
+			</ul>
+		</div>
 	<p><%= q.submit %></p>
 	<% end %>
 </div>
 
 <br /><br />
-
-</div>
+</body>
+</html>

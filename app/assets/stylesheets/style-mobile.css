@@ -193,7 +193,7 @@
  /* page 5 question_doc */
 
  	.page5_bg {
- 		background-image: url('../assets/bg_jungle.png');
+ 		background-image: url('../assets/bg_hospital_mob.png');
 		background-size: cover;
 		width: 100%;
 		text-align: center;
@@ -266,6 +266,13 @@
 		position: relative;
 	}
 
+	.patient1, .patient2, .patient3 {
+		width: 45%;
+		margin-top: 2%;
+		z-index: 1;
+		position: relative;
+	}
+
 	#quiz_bg {
 		background-color: white;
 		margin-left: 0;
@@ -308,7 +315,10 @@
 	.goodanswer, .wronganswer {
 		margin-bottom: 9%;
 	}
-
+	
+	.answercontent{
+		border-top: 1px rgba(160, 160, 160,0.3) solid;
+	}
 
 /* Jungle-dream: 1. screen*/
 
