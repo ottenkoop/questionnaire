@@ -1,7 +1,7 @@
 <% if @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 %>
 	<p><% session[:dream1] = true %> True</p>
 <% else %>
-	<p></p>
+	<p>You will need to do the Quiz again.</p>
 <% end %>
 
 <%= debug @result.answers.count.to_f %> 
