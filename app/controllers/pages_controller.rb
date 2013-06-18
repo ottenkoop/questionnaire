@@ -8,7 +8,6 @@ class PagesController < ApplicationController
 		@survey = Survey.find_by_name("Doctor")
 		@result = Result.new
 		@result.answer_results.build
-		session[:dream1] = true
 	end
 
 	def page6_doc
@@ -23,7 +22,6 @@ class PagesController < ApplicationController
 
 	def page9_teacher
 		@result = Result.find(session[:result_id])
-		session[:dream1] = true
 	end
 
 end

@@ -1,8 +1,7 @@
 <html class="whitecmsbackground">
 	<script>
 	function updateCountdown() {
-    // 140 is the max message length
-    var remaining = 50 - jQuery('.message').val().length;
+    var remaining = 100 - jQuery('.message').val().length;
     jQuery('.countdown').text(remaining + ' characters remaining.');
 	}
 
@@ -20,11 +19,11 @@
 <div class="question-blocks edit-question">
 	<%= form_for @question do |q| %>
 
-		<h2>Question: <%= q.text_field :content, :class => 'message', :maxlength => '50', :required => true %></h2><span class="countdown"></span>
+		<h2>Question: <%= q.text_field :content, :class => 'message', :maxlength => '100', :required => true %></h2><span class="countdown"></span>
 		<%= q.hidden_field :survey_id, value: params[:id] %>
 		<h1>Answers:</h1>
 		<%= q.fields_for :answers do |a| %>
-			<%= a.text_field :content, :maxlength => '50', :required => true %><%= a.select(:points, [['Wrong', 0], ['Right', 1]]) %>
+			<%= a.text_field :content, :maxlength => '75', :required => true %><%= a.select(:points, [['Wrong', 0], ['Right', 1]]) %>
 		<% end %>
 		<br />
 
