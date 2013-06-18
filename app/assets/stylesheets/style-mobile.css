@@ -60,7 +60,7 @@
 		height: 7%;
 	}
 
-/* page 1 */
+/* page 1 intro */
 
 	.page1_bg{
 		background-image: url('../assets/bg_jungle.png');
@@ -86,7 +86,9 @@
 		margin-top: 1%;
 }
 
-/* page 2 */
+
+
+/* page 1 conversation mom.*/
 
 	.page2_bg{
 		background-image: url('../assets/bg_bobo_home_mob.png');
@@ -120,6 +122,35 @@
 		display: block;
 		width: 0;
 		z-index: 2;
+	}
+
+/* Page 2 Bobo goes to bed */
+
+
+	.bobo_bed_bg {
+		background-image: url('../assets/bg_bedscreen_mob.png');
+		background-size: cover;
+		max-width: 960px;
+		height: 100%;
+		text-align: center;
+	}
+
+	.speech_bubble_bed_mob {
+
+	}
+
+	.bobo_bed_mob {
+		width: 70%;
+		margin-top: 25%;
+		padding-bottom: 20%;
+	}
+
+	.next_btn_bed_mob_1, .next_btn_bed_mob {
+		bottom: 0%;
+		left: 0%;
+		position: absolute;
+		width: 100%;
+		height: 7%;
 	}
 
 /*page 3 */

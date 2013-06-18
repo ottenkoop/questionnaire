@@ -1,7 +1,7 @@
 $(document).ready(() ->
 
 	# window.onbeforeunload = ->
- # 		"Are you sure you want to refresh? Your results will not be saved!"
+ 	#		"Are you sure you want to refresh? Your results will not be saved!"
 
 
 	$('	div.question:not(:first),

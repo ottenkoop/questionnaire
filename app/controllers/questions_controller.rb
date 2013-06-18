@@ -23,12 +23,13 @@ def new
   @question = Question.new
     3.times do
         question = @question.answers.build
-      end
+    end
 end
 
 def create
   @question = Question.new(params[:question])
-  if @question.save
+  
+    if @question.save
       flash[:notice] = "Question added."
       redirect_to surveys_url
     else
