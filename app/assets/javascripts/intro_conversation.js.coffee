@@ -8,13 +8,13 @@ $(document).ready(() ->
 			'message': 'That sounds bad, will she be alright?'}
 			,
 			{'speaker': 'mom'
-			'message': 'Yes. She recieved a medicine that will help to control the virus'}
+			'message': 'Yes. She recieved a medicine that will help to control the virus.'}
 			,
 			{'speaker': 'bobo'
 			'message': 'Can we visit her now?'}
 			,
 			{'speaker': 'mom'
-			'message': 'No bobo. It is getting late, you have to go to bed.'}
+			'message': 'No Bobo. It is getting late, you have to go to bed.'}
 			,
 			{'speaker': 'bobo'
 			'message': 'But....'}
