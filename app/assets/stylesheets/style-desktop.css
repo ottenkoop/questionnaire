@@ -41,7 +41,7 @@
 
 	.next_btn{
 		float: right !important;
-		margin-top: 319%;
+		margin-top: 326%;
 		margin-right: -57%;
 }
 
@@ -371,7 +371,31 @@
 		color: white;
 		text-shadow: 0px 2px #000;
 		text-decoration: none;
+		font-size: 25px;
 	}
+
+	.next_q:hover {
+		color: white;
+		text-shadow: 0px 2px #000;
+		text-decoration: none;
+		background: #a2d021; /* Old browsers */
+		background: -moz-linear-gradient(top,  #54970b 0%, #a2d021 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#54970b), color-stop(100%,#a2d021)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #54970b 0%, #a2d021 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #54970b 0%, #a2d021 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #54970b 0%, #a2d021 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #54970b 0%, #a2d021 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54970b', endColorstr='#a2d021',GradientType=0 ); /* IE6-9 */
+	}
+
+	.corner_btn {
+	  border-top-left-radius: 10px 10px;
+    width: 85%;
+    height: 10%;
+    text-align:center;
+		padding-top: 3%;
+		padding-bottom: 2%;
+    }
 
 	.next_btn0:hover, .next_btn1:hover, .next_btn2:hover {
 		text-decoration: none;
@@ -544,14 +568,14 @@
 	}
 
 
-	.jungle_monkey, .jungle_monkey_glow{
+	.jungle_monkey, .jungle_monkey_glow, .jungle_mosquito, .jungle_mosquito_glow {
 		float: right !important;
 		margin-top: 58%;
 		width: 70%;
 	}
 
 
-	.jungle_bobo, .jungle_bobo_glow{
+	.jungle_bobo, .jungle_bobo_glow, .bobo_mos_jungle, .bobo_mos_jungle_glow{
 		float: right !important;
 		margin-top: 10%;
 		width: 65%;
@@ -636,7 +660,7 @@
 	.jungle_next_btn2{
 		float: right !important;
 		margin-top: 318%;
-		margin-right: -157%;
+		margin-right: -171.5%;
 	}
 
 
@@ -645,7 +669,7 @@
 		padding: 4%;
 		margin-right: 2% !important;
 		margin-top: 3%;
-		width: 45% !important;
+		width: 53% !important;
 		background: #FFFFFF;
 		-webkit-border-radius: 15px;
 		-moz-border-radius: 15px;
@@ -658,7 +682,7 @@
 		content: "";
 		position: absolute;
 		bottom: -12px;
-		left: 40%;
+		left: 35%;
 		border-style: solid;
 		border-width: 15px 15px 0;
 		border-color: #FFFFFF transparent;
@@ -673,7 +697,7 @@
 		margin-left: 35% !important;
 		margin-right: 2% !important;
 		margin-top: 3%;
-		width: 45% !important;
+		width: 50% !important;
 		background: #FFFFFF;
 		-webkit-border-radius: 15px;
 		-moz-border-radius: 15px;
@@ -783,7 +807,47 @@
 		z-index: 8;
 	}
 
+/* Result page */
 
+	.result_bubble_desktop {
+		margin-top: 4%;
+		position: relative;
+		width: 85%;
+		background: #FFFFFF;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		margin-left: 7%;
+		z-index: 8;
+		margin-bottom: 16%;
+
+	}
+
+	.result_bubble_desktop:after {
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: 48%;
+		border-style: solid;
+		border-width: 0 15px 15px;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 1;
+	}
+
+	.result_bubble_desktop .top {
+		padding-top: 20px;
+	}
+
+	.result_bubble_desktop .bottom {
+		padding-bottom: 20px;
+	}
+
+	.result_bobo_bad {
+		margin-top: 5%;
+		width: 25%;
+	}
 
 
 } /* end @media */

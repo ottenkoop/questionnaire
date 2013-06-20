@@ -1,36 +1,26 @@
 <% if @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 && @result.answers.first.question.survey.name == "Doctor" %>
 
-		<% session[:dream1] = true %> <% render 'pages/02. doc_story/result_doc' %>
+		<% session[:dream1] = true %> <%= render 'pages/02. doc_story/result_doc' %>
 
 <% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 && @result.answers.first.question.survey.name == "Teacher" %>
 	
- 	<% session[:dream2] = true %> <% render 'pages/03. doc_story/result_teacher' %>
+ 	<% session[:dream2] = true %> <%= render 'pages/03. teach_story/result_teacher' %>
 
-<% else %>
+<% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 && @result.answers.first.question.survey.name == "Jungle" %>
+	
+ 	<% session[:dream2] = true %> <%= render 'pages/03. teach_story/result_teacher' %>
 
-	<div class="container-fluid result_bg">
-		<div class="row-fluid">
-			<div class="span12  visible-phone">
-				<img src="assets/bobo_wrong_answer_mob.png" class="result_bobo_bad"/>
-			</div>
-		</div>
+<% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f <= 0.60 && @result.answers.first.question.survey.name == "Doctor" %>
 
-		<div class="row-fluid">
-			<div class="span12  visible-phone">
-				<div class="result_bubble">
-					<p class="top"> YOU CAN DO BETTER! </p>
-					<p> TO GET TO THE NEXT LEVEL, YOU HAVE </p>
-					<p class="bottom"> TO DO THIS LEVEL AGAIN. </p>
-				</div>
-			</div>
-		</div>
+	<%= render 'pages/02. doc_story/result_bad_doc' %>
 
-		<div class="span12 result_play_again visible-phone">
-			<a href="#"><h5>Play again</h5></a>
-		</div>
+<% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f <= 0.60 && @result.answers.first.question.survey.name == "Teacher" %>
 
+	<%= render 'pages/02. doc_story/result_bad_doc' %>
 
-	</div>
+<% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f <= 0.60 && @result.answers.first.question.survey.name == "Jungle" %>
+
+	<%= render 'pages/02. doc_story/result_bad_doc' %>
 
 
 <% end %>

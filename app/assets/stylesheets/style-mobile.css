@@ -6,6 +6,13 @@
 		font-family: 'Bubblegum Sans', cursive;
 	}
 
+	.btn_mob {
+	 	width: 100%;
+	 	bottom: 0;
+	 	left: 0;
+	 	position: fixed;
+	}
+
 	.container-fluid{
 		min-height: 100%;
 		max-width: 100%;
@@ -287,6 +294,7 @@
 		color: white;
 		text-shadow: 0px 2px #000;
 		text-decoration: none;
+		font-size: 25px;
 	}
 
 	.next_btn0:hover, .next_btn1:hover {
@@ -380,59 +388,59 @@
 	border-radius: 7px;
 	margin-left: 7%;
 	z-index: 8;
-}
+	}
 
-.result_bubble:after {
-	content: "";
-	position: absolute;
-	top: -15px;
-	left: 45%;
-	border-style: solid;
-	border-width: 0 15px 15px;
-	border-color: #FFFFFF transparent;
-	display: block;
-	width: 0;
-	z-index: 1;
-}
+	.result_bubble:after {
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: 45%;
+		border-style: solid;
+		border-width: 0 15px 15px;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 1;
+	}
 
-.result_bubble .top {
-	padding-top: 20px;
-}
+	.result_bubble .top {
+		padding-top: 20px;
+	}
 
-.result_bubble .bottom {
-	padding-bottom: 20px;
-}
+	.result_bubble .bottom {
+		padding-bottom: 20px;
+	}
 
-.result_bobo_bad {
-	margin-top: 20%;
-	width: 52%;
-}
+	.result_bobo_bad {
+		margin-top: 20%;
+		width: 52%;
+	}
 
-.result_play_again {
-	background: #a2d021; /* Old browsers */
-	background: -moz-linear-gradient(top,  #a2d021 0%, #54970b 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2d021), color-stop(100%,#54970b)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #a2d021 0%,#54970b 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2d021', endColorstr='#54970b',GradientType=0 ); /* IE6-9 */
+	.result_play_again {
+		background: #a2d021; /* Old browsers */
+		background: -moz-linear-gradient(top,  #a2d021 0%, #54970b 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a2d021), color-stop(100%,#54970b)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  #a2d021 0%,#54970b 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  #a2d021 0%,#54970b 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2d021', endColorstr='#54970b',GradientType=0 ); /* IE6-9 */
 
-	-moz-box-shadow: 0px -2px 5px rgba(230,230,230,0.9);
-	-webkit-box-shadow: 0px -2px 5px rgba(230,230,230,0.8);
-	box-shadow: 0px 2px 2px rgba(0,0,0,.8);
+		-moz-box-shadow: 0px -2px 5px rgba(230,230,230,0.9);
+		-webkit-box-shadow: 0px -2px 5px rgba(230,230,230,0.8);
+		box-shadow: 0px 2px 2px rgba(0,0,0,.8);
 
-	margin-left: 0 !important;
-	width: 100%;
-	bottom: 0px;
-	position: fixed;
-}
+		margin-left: 0 !important;
+		width: 100%;
+		bottom: 0px;
+		position: fixed;
+	}
 
-.result_play_again h5, .result_play_again :hover {
-	color: white;
-	text-shadow: 0px 2px #000;
-	text-decoration: none;
-}
+	.result_play_again h5, .result_play_again :hover {
+		color: white;
+		text-shadow: 0px 2px #000;
+		text-decoration: none;
+	}
 
 
 /* Jungle-dream: 1. screen*/
@@ -457,4 +465,48 @@
 		text-align: center;
 	}
 
+
+/* Result Page */
+
+
+	.result_bubble_mob {
+		margin-top: 10%;
+		position: relative;
+		width: 85%;
+		background: #FFFFFF;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		margin-left: 7%;
+		z-index: 8;
+	}
+
+	.result_bubble_mob:after {
+		content: "";
+		position: absolute;
+		top: -15px;
+		left: 45%;
+		border-style: solid;
+		border-width: 0 15px 15px;
+		border-color: #FFFFFF transparent;
+		display: block;
+		width: 0;
+		z-index: 1;
+	}
+
+	.result_bubble_mob .top {
+		padding-top: 20px;
+	}
+
+	.result_bubble_mob .bottom {
+		padding-bottom: 20px;
+	}
+
+	.result_bobo_bad_mob {
+		margin-top: 5%;
+		width: 52%;
+	}
+
 }
+
+

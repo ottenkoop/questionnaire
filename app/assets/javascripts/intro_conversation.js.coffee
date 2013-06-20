@@ -25,8 +25,7 @@ $(document).ready(() ->
 		]
 
 	$('.cloud_intro').not(':first').hide()
-	$('	.intro_next_1,
-			.bobo_bubble_glow,
+	$('	.bobo_bubble_glow,
 			.mom_bubble,
 			.mom_bubble_mob,
 			.bobo_bubble_glow_mob').hide()
@@ -70,10 +69,6 @@ $(document).ready(() ->
 
 		e.preventDefault()
 
-		if conversation_position == (total_talks)
-			$('.intro_next_1').show()
-			$('.intro_next').hide()
-			
-			return false
+		return false
 	)
 )
