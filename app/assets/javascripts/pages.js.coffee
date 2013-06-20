@@ -33,7 +33,6 @@ $(document).ready(() ->
 		$('div.discription').hide()
 		if check_question == count_questions
 			$('form div.question:visible').hide().next().show(450)
-			$(this).hide()
 		else 
 			$('form div.question:visible').hide().next().show(450)
 			$('.next_btn1').hide()
@@ -89,7 +88,7 @@ $(document).ready(() ->
 					div.discription,
 					.next_btn1').show()
 
-			if check_question == count_questions
+		if check_question == count_questions
 				$('	.next_btn1,
 						.next_btn0').hide()
 				$('	.next_btn2').show()

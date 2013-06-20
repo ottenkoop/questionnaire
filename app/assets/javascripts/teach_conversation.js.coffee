@@ -8,10 +8,10 @@ $(document).ready(() ->
 			'message': 'I see you are a teacher now.'}
 			,
 			{'speaker': 'bobo'
-			'message': 'Yes, I didn’t see my teacher so I will try to be the teacher today.'}
+			'message': 'Yes, I did not see my teacher so I will try to be the teacher today.'}
 			,
 			{'speaker': 'bird'
-			'message': 'That is your chance to teach your friends about HIV/AIDS.'}
+			'message': 'This is your chance to teach your friends about HIV/AIDS.'}
 			,
 			{'speaker': 'bird'
 			'message': 'Can you do that?'}
@@ -38,16 +38,16 @@ $(document).ready(() ->
 
 		if (speaker == 'bobo')
 			$('	.teacher_speech_bubble2,
-				.bobo_teacher,
-				.bobo_teacher_mob,
-				.bird_teacher_glow,
-				.bird_teacher_glow_mob').hide()
+					.bobo_teacher,
+					.bobo_teacher_mob,
+					.bird_teacher_glow,
+					.bird_teacher_glow_mob').hide()
 			$('	.teacher_speech_bubble .teach_con').text(message)
 			$(' .teacher_speech_bubble,
-				.bird_teacher,
-				.bird_teacher_mob,
-				.bobo_teacher_glow,
-				.bobo_teacher_glow_mob').show()
+					.bird_teacher,
+					.bird_teacher_mob,
+					.bobo_teacher_glow,
+					.bobo_teacher_glow_mob').show()
 
 		else 
 			$('	.teacher_speech_bubble,

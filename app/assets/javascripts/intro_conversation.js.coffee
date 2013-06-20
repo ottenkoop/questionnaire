@@ -8,7 +8,7 @@ $(document).ready(() ->
 			'message': 'That sounds bad, will she be alright?'}
 			,
 			{'speaker': 'mom'
-			'message': 'Yes. She received a medicine that will help to control the virus.'}
+			'message': 'Yes. She received some medicine that will help to control the virus.'}
 			,
 			{'speaker': 'bobo'
 			'message': 'Can we visit her now?'}
