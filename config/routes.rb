@@ -17,7 +17,7 @@ Questionnaire::Application.routes.draw do
   match '/3' => 'pages#01. introduction/page3'
   match '/4' => 'pages#02. doc_story/page4_doc'
   match '/5' => 'pages#page5_doc'
-  match '/6' => 'pages#page6_doc'
+  match '/result' => 'pages#result_page'
   match '/7' => 'pages#03. teach_story/page7_teacher'
   match '/8' => 'pages#page8_teacher'
   match '/9' => 'pages#page9_teacher'

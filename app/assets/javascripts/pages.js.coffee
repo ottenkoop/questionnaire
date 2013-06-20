@@ -6,7 +6,9 @@ $(document).ready(() ->
 
 	$('	div.question:not(:first),
 			.next_btn2, 
-			.bobo_no_answer,
+			.patient1_no_answer,
+			.patient2_no_answer,
+			.patient3_no_answer,
 			.bobo_good_answer,
 			.bobo_wrong_answer,
 			.next_btn1,
@@ -54,6 +56,7 @@ $(document).ready(() ->
 
 		if !$(".radio-toolbar").eq(check_question - 1).find(":radio:checked").length
 		 	$('div.select').show(650)
+		 	
 		else if selected_answer_points == 1 # Good answer 
 			$('	.bobo_no_answer,
 					.patient1,
@@ -88,7 +91,7 @@ $(document).ready(() ->
 
 			if check_question == count_questions
 				$('	.next_btn1,
-					.next_btn0').hide()
+						.next_btn0').hide()
 				$('	.next_btn2').show()
 
 

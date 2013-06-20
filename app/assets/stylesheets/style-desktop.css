@@ -45,6 +45,14 @@
 		margin-right: -57%;
 }
 
+	.padding_top {
+		padding-top: 4%;
+	}
+
+	.wronganswer h5 {
+		color: green !important;
+	}
+
 	/* page 1 */
 
 	.page1_bg {
@@ -223,6 +231,10 @@
 		margin-bottom: 46%;
 	}
 
+	.dreams a:hover {
+		text-decoration: none !important;
+	}
+
 /* page 4 intro Doc */
 
 	.page4_doc_bg {
@@ -373,7 +385,7 @@
 		position: relative;
 	}
 
-	.patient1, .patient2, .patient3 {
+	.patient1, .patient2, .patient3, .patient1_no_answer, .patient2_no_answer, .patient3_no_answer {
 		width: 30%;
 		margin-top: -4%;
 		z-index: 1;
@@ -548,7 +560,7 @@
 	.jungle_next_btn{
 		float: right !important;
 		margin-top: 318%;
-		margin-right: -43%;
+		margin-right: -57%;
 	}
 
 

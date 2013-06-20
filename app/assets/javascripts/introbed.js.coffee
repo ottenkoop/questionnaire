@@ -1,7 +1,7 @@
 $ ->
   $(" .next_btn_bed_1,
       .next_btn_bed_mob_1").hide()
-  texts = ["We can not do anything about it now.", "I hope I will sleep well."]
+  texts = ["We can't do anything about it now.", "I hope I will sleep well."]
   texts_position = 0
   total_texts = texts.length
   $(".next_btn_bed_mob, .next_btn_bed").click ->

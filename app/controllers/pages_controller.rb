@@ -10,7 +10,7 @@ def page5_doc
 		@result.answer_results.build
 end
 
-def page6_doc
+def result_page
 	@result = Result.find(session[:result_id])
 end
 
@@ -18,10 +18,6 @@ def page8_teacher
 	@survey = Survey.find_by_name("Teacher")
 	@result = Result.new
 	@result.answer_results.build
-end
-
-def page9_teacher
-	@result = Result.last.find(session[:result_id])	
 end
 
 end

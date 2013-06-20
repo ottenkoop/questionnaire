@@ -60,6 +60,10 @@
 		height: 7%;
 	}
 
+	.question {
+		margin-left: 0 !important;
+	}
+
 /* page 1 intro */
 
 	.page1_bg{
@@ -195,7 +199,7 @@
 
 	.speech_bubble_bird_mob, .speech_bubble_mom_mob {
 		position: relative;
-		padding: 10% 2% 10% 2%;
+		padding: 10% 1% 10% 1%;
 		margin-left: 4% !important;
 		margin-top: 3%;
 		width: 90% !important;
@@ -246,7 +250,6 @@
 		box-shadow: inset 0px 1px 3px rgba(230,230,230,.6);
 		color: #444;
 		margin: 0!important;
-		padding-left: 0.5%;
 	}
 
 	.radio-toolbar input[type="radio"]:checked + label {
@@ -349,6 +352,10 @@
 	
 	.answercontent{
 		border-top: 1px rgba(160, 160, 160,0.3) solid;
+	}
+
+	.answercontent label{
+		padding: 0 0.5%;
 	}
 
 /*page 6 */
