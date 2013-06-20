@@ -32,9 +32,6 @@ $(document).ready(() ->
 		if check_question == count_questions
 			$('form div.question:visible').hide().next().show(450)
 			$(this).hide()
-			$('.next_btn1,
-					.next_btn0').hide()
-			$('.next_btn2').show()
 		else 
 			$('form div.question:visible').hide().next().show(450)
 			$('.next_btn1').hide()
@@ -88,6 +85,12 @@ $(document).ready(() ->
 			$('	div.wronganswer,
 					div.discription,
 					.next_btn1').show()
+
+			if check_question == count_questions
+				$('	.next_btn1,
+					.next_btn0').hide()
+				$('	.next_btn2').show()
+
 
 		e.preventDefault()
 	)
