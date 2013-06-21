@@ -22,7 +22,9 @@ $(document).ready(() ->
 
 	$('	.cloud_lion_jungle').not(':first').hide()
 	$(' .jungle_bobo_glow3,
-			.jungle_lion').hide()
+			.jungle_lion,
+			.lion_mob,
+			.lion_bobo_glow').hide()
 
 	conversation_position = 0
 
@@ -36,20 +38,28 @@ $(document).ready(() ->
 		if (speaker == 'bobo')
 			$('	.jungle_speech_bubble5,
 					.jungle_lion_glow,
-					.jungle_bobo3').hide()
+					.jungle_bobo3,
+					.lion_bobo,
+					.lion_mob_glow').hide()
 			$('	.cloud_lion_jungle .lion_con').text(message)
 			$('	.jungle_speech_bubble6,
 					.jungle_lion,
-					.jungle_bobo_glow3').show()
+					.jungle_bobo_glow3,
+					.lion_bobo_glow,
+					.lion_mob').show()
 
 		else 
 			$('	.jungle_speech_bubble6,
 					.jungle_bobo_glow3,
-					.jungle_lion').hide()
+					.jungle_lion,
+					.lion_mob,
+					.lion_bobo_glow').hide()
 			$('	.cloud_lion_jungle .lion_con').text(message)
 			$('	.jungle_speech_bubble5,
 					.jungle_lion_glow,
-					.jungle_bobo3').show()
+					.jungle_bobo3,
+					.lion_mob_glow,
+					.lion_bobo').show()
 
 		conversation_position++
 

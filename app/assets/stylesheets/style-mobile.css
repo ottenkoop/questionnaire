@@ -56,6 +56,7 @@
 	.person_bot_mob, .person_bot_glow_mob {
 		width: 50%;
 		margin-top: 2%;
+		margin-bottom: 1%;
 		float: left;
 	}
 
@@ -479,28 +480,26 @@
 		background-size: cover;
 		min-height: 100%;
 		width: 100%;
-		position: absolute;
 		text-align: center;
 	}
 
 /* Jungle-dream: 2. screen*/
+/*page 12 */
 
-	.jungle_bg_mosquito {
-		background-image: url('../assets/bg_jungle.png');
+	.jungle_bg, .jungle_bg_mosquito {
+		background-image: url('../assets/bg_jungle_mob.png');
 		background-size: cover;
 		min-height: 100%;
 		width: 100%;
-		position: absolute;
 		text-align: center;
 	}
-
 
 /* Result Page */
 
 
 	.result_bubble_mob {
 		margin-top: 10%;
-		margin-bottom: 55%;
+		margin-bottom: 45%;
 		position: relative;
 		width: 85%;
 		background: #FFFFFF;
@@ -536,6 +535,65 @@
 	.result_bobo_bad_mob {
 		margin-top: 5%;
 		width: 52%;
+	}
+
+
+
+	/*end screen*/
+
+	ul {
+		list-style: none;
+		margin: 0 !important;
+	}
+
+
+	.end_screen {
+		background-image: url('../assets/endscreen_bg_mob.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+	.end_screen h2 {
+		margin-top: 44%;
+		color: #3c86b4;
+		font-size: 1.6em;
+	}
+
+	.end_screen h5 {
+		color: rgb(26, 172, 241);
+		margin-top: -5%;
+	}
+
+	.end_screen h4 {
+		margin-bottom: 0;
+		font-size: 15px;
+	}
+
+	.end_screen h6 {
+		/*padding-left: 36%;*/
+		margin-top: 0;
+
+	}
+
+	.end_screen, .padding-bottom {
+		padding-bottom: 51%;
+	}
+
+	.end_screen ul {
+		margin-top: 1%;
+	}
+
+	.end {
+		margin-bottom: 4%;
+	}
+
+	.organizations {
+		font-size: 13px;
+	}
+
+	.rens {
+		font-size: 10px;
 	}
 
 }

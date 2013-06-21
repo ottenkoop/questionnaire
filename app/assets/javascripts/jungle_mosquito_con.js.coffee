@@ -32,7 +32,9 @@ $(document).ready(() ->
 
 	$('.cloud_mos_jungle').not(':first').hide()
 	$(' .bobo_mos_jungle,
-			.jungle_mosquito_glow').hide()
+			.jungle_mosquito_glow,
+			.jungle_mos_bobo_mob,
+			.mos_con_glow_mob').hide()
 
 	conversation_position = 0
 
@@ -46,20 +48,28 @@ $(document).ready(() ->
 		if (speaker == 'bobo')
 			$('	.jungle_speech_bubble4,
 					.bobo_mos_jungle,
-					.jungle_mosquito_glow').hide()
+					.jungle_mosquito_glow,
+					.mos_con_glow_mob,
+					.jungle_mos_bobo_mob').hide()
 			$('	.jungle_speech_bubble3 .mos_jungle_con').text(message)
 			$('	.jungle_speech_bubble3,
 					.bobo_mos_jungle_glow,
-					.jungle_mosquito').show()
+					.jungle_mosquito,
+					.mos_con_mob,
+					.jungle_mos_bobo_glow_mob').show()
 
 		else 
 			$('	.jungle_speech_bubble3,
 					.jungle_mosquito,
-					.bobo_mos_jungle_glow').hide()
+					.bobo_mos_jungle_glow,
+					.jungle_mos_bobo_glow_mob,
+					.mos_con_mob').hide()
 			$('	.jungle_speech_bubble4 .mos_jungle_con').text(message)
 			$('	.jungle_speech_bubble4,
 					.bobo_mos_jungle,
-					.jungle_mosquito_glow').show()
+					.mos_con_glow_mob,
+					.jungle_mosquito_glow,
+					.jungle_mos_bobo_mob').show()
 
 		conversation_position++
 
