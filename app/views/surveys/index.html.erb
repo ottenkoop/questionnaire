@@ -1,16 +1,16 @@
 <html class="whitecmsbackground">
-<body class="whitecmsbackground">
-	<div class="logout-btn">
-		<%= link_to "Log out", log_out_path, class: "logout" %>
-	</div>
-		<div class="stories">
-			<% @surveys.each do |s| %>
-
-			<div class="story">
-				<p><%= link_to s.name, s, :class => "link" %></p>
-			</div>
-
-			<% end %>
+	<body class="whitecmsbackground">
+		<div class="logout-btn">
+			<%= link_to "Log out", log_out_path, class: "logout" %>
 		</div>
-</body>
+			<div class="stories">
+				<% @surveys.each do |s| %>
+
+				<div class="story">
+					<p><%= link_to s.name, s, :class => "link" %></p>
+				</div>
+
+				<% end %>
+			</div>
+	</body>
 </html>

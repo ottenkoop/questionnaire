@@ -393,3 +393,13 @@ input[type="radio"] {
   width: 190px;
   background-color: rgb(240, 240, 240);
 }
+
+#cms-container {
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  height: 200px;
+  top: 50%;
+  margin-top: -150px;
+  position: absolute;
+}

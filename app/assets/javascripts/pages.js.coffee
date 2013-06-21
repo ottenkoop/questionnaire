@@ -2,7 +2,11 @@ $(document).ready(() ->
 
 	# window.onbeforeunload = ->
  	#		"Are you sure you want to refresh? Your results will not be saved!"
-
+	
+	window.addEventListener "load", ->
+	  setTimeout (->
+	    window.scrollTo 0, 1
+	  ), 0
 
 	$('	div.question:not(:first),
 			.next_btn2, 
@@ -24,6 +28,7 @@ $(document).ready(() ->
 
 	count_questions = $("#new_result .question").length
 	check_question = 1
+	final_button = 0
 	second_speaker = (count_questions / 3)
 	third_speaker = ((count_questions / 3) * 2)
 
@@ -44,7 +49,7 @@ $(document).ready(() ->
 			$('.patient3').show()
 		else
 			$('.patient2').show()
-				
+
 		check_question++
 		e.preventDefault()
 		return false
@@ -71,6 +76,7 @@ $(document).ready(() ->
 					div.discription,
 					.next_btn1,
 					.bobo_good_answer').show()
+			final_button++
 
 		else if selected_answer_points == 0 # Wrong answer
 			$('.bobo_wrong_answer').show()
@@ -87,13 +93,13 @@ $(document).ready(() ->
 			$('	div.wronganswer,
 					div.discription,
 					.next_btn1').show()
+			final_button++
 
-		if check_question == count_questions
-				$('	.next_btn1,
-						.next_btn0').hide()
-				$('	.next_btn2').show()
-
-
+		if final_button == count_questions
+			$('	.next_btn1,
+					.next_btn0').hide()
+			$(' .next_btn2').show()
+		
 		e.preventDefault()
 	)
 

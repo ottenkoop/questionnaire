@@ -1,13 +1,13 @@
 <%= form_for @result do |r| %>
 
-<div class="container-fluid page7_bg">
+<div class="container-fluid jungle_bg">
 
   <div class="row-fluid padding_top">
     <div class="span12">
-      <img src="assets/student1_mob.png" class=" patient1"/>
-      <img src="assets/student2_mob.png" class=" patient2"/>
-      <img src="assets/student3_mob.png" class=" patient3"/>
-      <img src="assets/teacher_bobo_good_answer_mob.png" class="quiz_bobo bobo_good_answer"/>
+      <img src="assets/lion_mob.png" class=" patient1"/>
+      <img src="assets/lion_mob.png" class=" patient2"/>
+      <img src="assets/lion_mob.png" class=" patient3"/>
+      <img src="assets/bobo_good_answer_mob.png" class="quiz_bobo bobo_good_answer"/>
       <img src="assets/bobo_wrong_answer_mob.png" class="quiz_bobo bobo_wrong_answer" />
     </div>
   </div>
@@ -21,7 +21,7 @@
           Well done! That is the right answer:
         </div>
         <div class="s_bubble_quiz selected_wrong">
-          That is wrong. The right answer was:
+          That's wrong. The right answer was:
         </div>
       </div>
   </div>
@@ -46,7 +46,7 @@
     
     <div class="discription">
       <div class="goodanswer">
-        <h5>That is the right answer because:</h5>
+        <p>That is the right answer because:</p>
         <p>"<%= q.discription %>"</p>
       </div>
       <div class="wronganswer">
@@ -73,7 +73,7 @@
         </label>
         <label>
           <a class="next_btn2">
-            <h5>Finish the Teacher Story.</h5>
+            <h5>Finish the Jungle Story.</h5>
             <%= r.submit "Finish" %>
           </a>
         </label>

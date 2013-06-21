@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   end
 
   def logged_in!
-  	redirect_to "/log_in", :alert => "You have to log in first!" unless current_user
+  	redirect_to "/log_in" unless current_user
   end
 
   helper_method :current_user

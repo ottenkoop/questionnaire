@@ -8,7 +8,7 @@ $(document).ready(() ->
 			'message': 'And who are you?'}
 			,
 			{'speaker': 'monkey'
-			'message': 'I am Kong. And the jungle needs your help!'}
+			'message': 'I am Kong. The jungle needs your help!'}
 			,
 			{'speaker': 'bobo'
 			'message': 'Alright, I’ll help you. What do I need to do?'}
@@ -26,10 +26,10 @@ $(document).ready(() ->
 			'message': 'They sting people and that is how they get infected.'}
 			,
 			{'speaker': 'monkey'
-			'message': 'Please help us Bobo. We don’t want to get sick.'}
+			'message': 'Please help us Bobo. We do not want people to get sick.'}
 			,
 			{'speaker': 'bobo'
-			'message': 'Ok. I will try to help you.'}
+			'message': 'Okay. I will try to help you.'}
 			,
 			{'speaker': 'bobo'
 			'message': 'Where can I find them?'}

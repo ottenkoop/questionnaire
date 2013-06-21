@@ -67,6 +67,14 @@
 		height: 7%;
 	}
 
+	.next_btn2 input[name="commit"] {
+		display: none;
+	}
+
+	.next_btn2:hover{
+		text-decoration: none;
+	}
+
 	.question {
 		margin-left: 0 !important;
 	}
@@ -74,7 +82,7 @@
 /* page 1 intro */
 
 	.page1_bg{
-		background-image: url('../assets/bg_jungle.png');
+		background-image: url('../assets/bg_jungle_mob.png');
 		background-size: cover;
 		min-height: 100%;
 		width: 100%;
@@ -93,8 +101,8 @@
 	}
 
 	.bobo_c{
-		width: 35%;
-		margin-top: 1%;
+		width: 38%;
+		margin-top: 5%;
 }
 
 
@@ -112,7 +120,7 @@
 
 	.speech_bubble_mob {
 		position: relative;
-		padding: 10% 2% 10% 2%;
+		padding: 7% 2% 7% 2%;
 		margin-left: 4% !important;
 		margin-top: 3%;
 		width: 90% !important;
@@ -206,7 +214,7 @@
 
 	.speech_bubble_bird_mob, .speech_bubble_mom_mob {
 		position: relative;
-		padding: 10% 1% 10% 1%;
+		padding: 7% 1% 7% 1%;
 		margin-left: 4% !important;
 		margin-top: 3%;
 		width: 90% !important;
@@ -251,7 +259,6 @@
 	}
 
 	.radio-toolbar label {
-    padding: 3px 0 3px 0;
 		-moz-box-shadow: inset 0px 1px 3px rgba(230,230,230,.6);
 		-webkit-box-shadow: inset 0px 1px 3px rgba(230,230,230,.6);
 		box-shadow: inset 0px 1px 3px rgba(230,230,230,.6);
@@ -291,10 +298,15 @@
 	}
 
 	.next_q h5 {
+		margin: 7px 0 !important;
 		color: white;
 		text-shadow: 0px 2px #000;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 20px;
+	}
+
+	.next_q a:hover, .next_q h5:hover, .next_q:hover {
+		text-decoration: none;
 	}
 
 	.next_btn0:hover, .next_btn1:hover {
@@ -309,7 +321,7 @@
 	}
 
 	.patient1, .patient2, .patient3 {
-		width: 45%;
+		width: 60%;
 		margin-top: 2%;
 		z-index: 1;
 		position: relative;
@@ -350,20 +362,26 @@
 	}
 
 	.bg_change {
-		padding-bottom: 55%;
+		padding-bottom: 35%;
 		margin-top: 7%;
 	}
 
 	.goodanswer, .wronganswer {
-		margin-bottom: 9%;
+		margin-bottom: 2%;
+		margin-left: 1%;
+	}
+
+	.wronganswer h5, .goodanswer h5 {
+		color: green !important;
 	}
 	
 	.answercontent{
 		border-top: 1px rgba(160, 160, 160,0.3) solid;
+
 	}
 
 	.answercontent label{
-		padding: 0 0.5%;
+		padding: 1% 0.5%;
 	}
 
 /*page 6 */
@@ -442,6 +460,16 @@
 		text-decoration: none;
 	}
 
+/*page 7 and page 8*/
+
+	.page7_bg {
+		background-image: url('../assets/bg_classroom_mob.png');
+		background-size: cover;
+		min-height: 100%;
+		max-height: 125%;
+		width: 100%;
+		text-align: center;
+}
 
 /* Jungle-dream: 1. screen*/
 

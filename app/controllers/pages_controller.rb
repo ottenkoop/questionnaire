@@ -20,4 +20,10 @@ class PagesController < ApplicationController
 		@result.answer_results.build
 	end
 
+	def page15_jungle
+		@survey = Survey.find_by_name("Jungle")
+		@result = Result.new
+		@result.answer_results.build
+	end
+
 end

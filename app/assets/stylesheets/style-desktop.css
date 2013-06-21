@@ -19,7 +19,7 @@
 	height: 42px;
 	width: 83px;
 	float: left;
-}
+	}
 
 	.home_btn {
 	background-image: url('../assets/home_button.png');
@@ -28,7 +28,7 @@
 	width: 33px;
 	float: left;
 	margin:4px 0 4px 6px;
-}
+	}
 
 	.help_btn {
 		background-image: url('../assets/button_help.png');
@@ -37,19 +37,19 @@
 		width: 33px;
 		float: left;
 		margin:4px;
-}
+	}
 
 	.next_btn{
 		float: right !important;
-		margin-top: 326%;
+		margin-top: 326% !important;
 		margin-right: -57%;
-}
+	}
 
 	.padding_top {
 		padding-top: 4%;
 	}
 
-	.wronganswer h5 {
+	.wronganswer h5, .goodanswer h5 {
 		color: green !important;
 	}
 
@@ -76,10 +76,11 @@
 	.bobo_c {
 		width: 20%;
 		margin-top: 1%;
-		margin-bottom: 2%;
-}
+		margin-bottom: 1%;
+	}
 
 /* page 2*/
+
 
 	.page2_bg {
 		background-image: url('../assets/bg_bobo_home.png');
@@ -105,8 +106,8 @@
 	.speech_bubble:after, .speech_bubble_mom:after {
 		content: "";
 		position: absolute;
-		bottom: -12px;
-		left: 20%;
+		bottom: -15px;
+		left: 30%;
 		border-style: solid;
 		border-width: 15px 15px 0;
 		border-color: #FFFFFF transparent;
@@ -116,22 +117,22 @@
 	}
 
 	.speech_bubble_mom:after{
-		left: 84%;
+		left: 75%;
 	}
 
-	.mom_bubble, .mom_bubble_glow{
+	.mom_bubble, .mom_bubble_glow {
 		width: 105%;
 		float: right !important;
-		margin-right: -71%;
-		margin-top: 51%;
+		margin-right: -55%;
+		margin-top: 54%;
 		position: relative;
 	}
 
-	.bobo_bubble, .bobo_bubble_glow{
-		width: 105%;
+	.bobo_bubble, .bobo_bubble_glow {
+		width: 90%;
 		float: right !important;
-		margin-top: 55%;
-		margin-right: -49%;
+		margin-top: 64%;
+		margin-right: -40%;
 		position: relative;
 	}
 
@@ -164,15 +165,15 @@
 
 	.bobo_bed, .bobo_bed_glow {
 		float: left;
-		margin-left: 20%;
-		margin-top: 15%;
-		width: 75%;
+		margin-left: 30%;
+		margin-top: 25%;
+		width: 71%;
 	}
 
 	.next_btn_bed, .next_btn_bed_1 {
 		float: right !important;
-		margin-top: 194%;
-		margin-right: -173%;
+		margin-top: 327%;
+		margin-right: -329%;
 	}
 
 	.speech_bubble_bed {
@@ -228,7 +229,7 @@
 	}
 
 	.picture{
-		margin-bottom: 46%;
+		margin-bottom: 43%;
 	}
 
 	.dreams a:hover {
@@ -245,9 +246,9 @@
 	}
 
 	.bobo_doc_sitting, .bobo_doc_sitting_glow {
-		width: 59%;
+		width: 58%;
 		bottom: 0%;
-		margin-top: 3%;
+		margin-top: 0.5%;
 		z-index: 0;
 		position: relative;
 	}
@@ -261,9 +262,9 @@
 	}
 
 	.hosp_next_btn {
-		margin-top: 33%;
+		margin-top: 231%;
 		float: right !important;
-		margin-right: -0.5%;
+		margin-right: -57%;
 	}
 
 	.speech_bubble_bird {
@@ -374,7 +375,11 @@
 		font-size: 25px;
 	}
 
-	.next_q:hover {
+	.next_q a:hover, .next_q:hover {
+		text-decoration: none;
+	}
+
+	.next_q:active {
 		color: white;
 		text-shadow: 0px 2px #000;
 		text-decoration: none;
@@ -426,6 +431,7 @@
 		border-radius: 7px;
 		margin-left: 7%;
 		z-index: 10;
+		opacity: 0.9;
 	}
 
 	.s_bubble_quiz:after {
@@ -467,7 +473,7 @@
 	}
 
 
-/*page 7 teacher*/
+/*page 7 teacher and Page 8*/
 
 	.page7_bg {
 		background-image: url('/assets/bg_classroom.png');
@@ -543,16 +549,7 @@
 	.teach_nxt_btn{
 		float: right !important;
 		margin-top: 318%;
-		margin-right: -43%;
-	}
-
-/*page 8 */
-
-	.page8_bg {
-		background-image: url('/assets/bg_classroom.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-align: center;
+		margin-right: -57%;
 	}
 
 
@@ -734,7 +731,7 @@
 	.jungle_next_btn3{
 		float: right !important;
 		margin-top: 319%;
-		margin-right: -100%;
+		margin-right: -114.5%;
 		z-index: 20;
 		position: relative;
 	}
@@ -820,6 +817,7 @@
 		margin-left: 7%;
 		z-index: 8;
 		margin-bottom: 16%;
+		opacity: 0.9;
 
 	}
 
@@ -847,6 +845,50 @@
 	.result_bobo_bad {
 		margin-top: 5%;
 		width: 25%;
+	}
+
+/*end screen*/
+
+	.end_screen {
+		background-image: url('../assets/endscreen_bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+	}
+
+	.end_screen h2 {
+		margin-top: 22%;
+		color: #3c86b4;
+	}
+
+	.end_screen h5 {
+		color: rgb(26, 172, 241);
+	}
+
+	.end_screen h4 {
+		margin-bottom: 0;
+		font-size: 15px;
+	}
+
+	.end_screen h6 {
+		padding-left: 36%;
+		margin-top: 0;
+	}
+
+	.end_screen ul {
+		margin-top: 1%;
+	}
+
+	.end {
+		margin-bottom: 4%;
+	}
+
+	.organizations {
+		font-size: 13px;
+	}
+
+	.rens {
+		font-size: 10px;
 	}
 
 

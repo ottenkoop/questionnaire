@@ -26,6 +26,9 @@ Questionnaire::Application.routes.draw do
   match '/12' => 'pages#04. jungle_story/page12_jungle'
   match '/13' => 'pages#04. jungle_story/page13_jungle'
   match '/14' => 'pages#04. jungle_story/page14_jungle'
+  match '/15' => 'pages#page15_jungle'
+  match '/THEEND' => 'pages#end_screen.html.erb'
+
 
   get '/log_in' => "sessions#new", as: 'log_in'
   get '/log_out' => "sessions#destroy", as: 'log_out'

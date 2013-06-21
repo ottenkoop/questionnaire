@@ -25,7 +25,9 @@ $(document).ready(() ->
 
 	$('	.cloud_teach').not(':first').hide()
 	$('	.bobo_teacher_glow,
-			.bird_teacher').hide()
+			.bird_teacher,
+			.person_top_mob,
+			.person_bot_glow_mob').hide()
 
 	conversation_position = 0
 

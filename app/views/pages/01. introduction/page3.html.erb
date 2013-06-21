@@ -5,27 +5,25 @@
           
         <% if session[:dream1] %>
           <img src="assets/level1_finished_mob.png" class="level1_mob" />
-        <% else %>
-          <a href="/4">
-            <img src="assets/level1_mob.png" class="level1_mob" />
-          </a>
-        <% end %> 
-        
-        <% if session[:dream2] %>
+        <a href="/7">
+          <img src="assets/level2_mob.png" class="level2_mob" />
+        </a>
+          <img src="assets/level3_locked_mob.png" class="level3_mob" />
+         
+        <% elsif session[:dream2] %>
+          <img src="assets/level1_finished_mob.png" class="level1_mob" />
           <img src="assets/level2_finished_mob.png" class="level2_mob" />
+        <a href="/12">          
+          <img src="assets/level3_mob.png" class="level3_mob" />
+        </a>
+        
         <% else %>
-          <a href="/7">
-            <img src="assets/level2_mob.png" class="level2_mob" />
-          </a>
-        <% end %> 
-
-        <% if session[:dream3] %>
-          <img src="assets/level3_finished_mob.png" class="level3_mob" />
-        <% else %>
-          <a href="#">
-            <img src="assets/level3_finished_mob.png" class="level3_mob" />
-          </a>
-        <% end %> 
+        <a href="/4">
+          <img src="assets/level1_mob.png" class="level1_mob" />
+        </a>
+          <img src="assets/level2_locked_mob.png" class="level2_mob" />
+          <img src="assets/level3_locked_mob.png" class="level3_mob" />
+          <% end %>
 
       </div>
 
@@ -37,12 +35,15 @@
         </a>
           <img src="assets/level3_locked.png" class="level3" />
          
-          <% else if session[:dream2] %>
-            <img src="assets/level1_finished.png" class="level1" />
-            <img src="assets/level2_finished.png" class="level2" />
-          <a href="/10">          
-            <img src="assets/level3.png" class="level3" />
-          </a>
+        <% elsif session[:dream2] %>
+          <img src="assets/level1_finished.png" class="level1" />
+          <img src="assets/level2_finished.png" class="level2" />
+        <a href="/12">          
+          <img src="assets/level3.png" class="level3" />
+        </a>
+
+        <% elsif session[:dream3] %>
+          
         
         <% else %>
         <a href="/4">
@@ -50,7 +51,6 @@
         </a>
           <img src="assets/level2_locked.png" class="level2" />
           <img src="assets/level3_locked.png" class="level3" />
-          <% end %>
         <% end %>
         </a>
       </div>

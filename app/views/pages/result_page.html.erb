@@ -1,14 +1,14 @@
 <% if @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 && @result.answers.first.question.survey.name == "Doctor" %>
 
-		<% session[:dream1] = true %> <%= render 'pages/02. doc_story/result_doc' %>
+	<% session[:dream1] = true %> <%= render 'pages/02. doc_story/result_doc' %>
 
 <% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 && @result.answers.first.question.survey.name == "Teacher" %>
 	
- 	<% session[:dream2] = true %> <%= render 'pages/03. teach_story/result_teacher' %>
+ 	<% session[:dream2] = true %><% session[:dream1] = false %> <%= render 'pages/03. teach_story/result_teacher' %>
 
 <% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f >= 0.60 && @result.answers.first.question.survey.name == "Jungle" %>
 	
- 	<% session[:dream2] = true %> <%= render 'pages/03. teach_story/result_teacher' %>
+ 	<% session[:dream3] = true %><% session[:dream2] = false %><%= render 'pages/04. jungle_story/result_jungle' %>
 
 <% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f <= 0.60 && @result.answers.first.question.survey.name == "Doctor" %>
 
@@ -16,11 +16,11 @@
 
 <% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f <= 0.60 && @result.answers.first.question.survey.name == "Teacher" %>
 
-	<%= render 'pages/02. doc_story/result_bad_doc' %>
+	<%= render 'pages/03. teach_story/result_bad_teacher' %>
 
 <% elsif @result.answers.sum(:points).to_f / @result.answers.count.to_f <= 0.60 && @result.answers.first.question.survey.name == "Jungle" %>
 
-	<%= render 'pages/02. doc_story/result_bad_doc' %>
+	<%= render 'pages/04. jungle_story/result_bad_jungle' %>
 
 
 <% end %>

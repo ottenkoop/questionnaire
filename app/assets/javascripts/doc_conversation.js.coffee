@@ -73,12 +73,7 @@ $(document).ready(() ->
 		conversation_position++
 
 		e.preventDefault()
-
-		if conversation_position == (total_talks)
-			$('.hosp_next_6').show()
-			$('.hosp_next').hide()
-			
-			return false
+		return false
 	)
 
 	# $('	.hosp_con_bobo_2,
