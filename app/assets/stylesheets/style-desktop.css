@@ -226,6 +226,57 @@
 
 	.level1, .level2, .level3 {
 		margin-left: 1%;
+		width: 226px;
+		height: 151px;
+		display: block;
+		float: left;
+		text-indent: -99999px;
+
+	}
+
+	.level1 {
+		background: url('../assets/level1.png');
+		margin-left: 122px;
+	}
+
+	#level1:hover {
+		background: url('../assets/level1_hover.png');
+	}
+
+	.level1_finished {
+		background: url('../assets/level1_finished.png');
+	}
+
+	.level2 {
+		background: url('../assets/level2.png');
+	}
+
+	#level2:hover {
+		background: url('../assets/level2_hover.png');
+	}
+
+	.level2_locked {
+		background: url('../assets/level2_locked.png');
+	}
+
+	.level2_finished {
+		background: url('../assets/level2_finished.png');
+	}
+
+	.level3 {
+		background: url('../assets/level2.png');
+	}
+
+	#level3:hover {
+		background: url('../assets/level3_hover.png');
+	}
+
+	.level3_locked {
+		background: url('../assets/level3_locked.png');
+	}
+
+	.level3_finished {
+		background: url('../assets/level3_finished.png');
 	}
 
 	.picture{

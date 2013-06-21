@@ -6,7 +6,7 @@
         <% if session[:dream1] %>
           <img src="assets/level1_finished_mob.png" class="level1_mob" />
         <a href="/7">
-          <img src="assets/level2_mob.png" class="level2_mob level2_mob_hover" />
+          <img src="assets/level2_mob.png" class="level2_mob" />
         </a>
           <img src="assets/level3_locked_mob.png" class="level3_mob" />
          
@@ -14,12 +14,12 @@
           <img src="assets/level1_finished_mob.png" class="level1_mob" />
           <img src="assets/level2_finished_mob.png" class="level2_mob" />
         <a href="/12">          
-          <img src="assets/level3_mob.png" class="level3_mob level3_mob_hover" />
+          <img src="assets/level3_mob.png" class="level3_mob" />
         </a>
         
         <% else %>
         <a href="/4">
-          <img src="assets/level1_mob.png" class="level1_mob level1_mob_hover" />
+          <img src="assets/level1_mob.png" class="level1_mob" />
         </a>
           <img src="assets/level2_locked_mob.png" class="level2_mob" />
           <img src="assets/level3_locked_mob.png" class="level3_mob" />
@@ -28,31 +28,28 @@
       </div>
 
       <div class="row-fluid hidden-phone dreams">
+
         <% if session[:dream1] %>
-          <img src="assets/level1_finished.png" class="level1" />
-        <a href="/7">
-          <img src="assets/level2.png" class="level2 level2_hover" />
-        </a>
-          <img src="assets/level3_locked.png" class="level3" />
+        <a href="#" class="level1 level1_finished">Button</a>
+        <a href="/7" class="level2" id="level2">Button</a>
+        <a href="#" class="level3 level3_locked">Button</a>
          
         <% elsif session[:dream2] %>
-          <img src="assets/level1_finished.png" class="level1" />
-          <img src="assets/level2_finished.png" class="level2" />
-        <a href="/12">          
-          <img src="assets/level3.png" class="level3 level3_hover" />
-        </a>
+        <a href="#" class="level1 level1_finished">Button</a>
+        <a href="#" class="level2 level2_finished">Button</a>
+        <a href="/12" class="level3" id="level3">Button</a>
 
         <% elsif session[:dream3] %>
-          
+        <a href="#" class="level1 level1_finished">Button</a>
+        <a href="#" class="level2 level2_finished">Button</a> 
+        <a href="#" class="level3 level3_finished">Button</a> 
         
         <% else %>
-        <a href="/4">
-          <img src="assets/level1.png" class="level1 level1_hover" />
-        </a>
-          <img src="assets/level2_locked.png" class="level2" />
-          <img src="assets/level3_locked.png" class="level3" />
+        <a href="/4" class="level1" id="level1">Button</a>
+        <a href="#" class="level2 level2_locked">Button</a>
+        <a href="#" class="level3 level3_locked">Button</a>
         <% end %>
-        </a>
+
       </div>
     </div>
     <div class="span12 picture"></div>
