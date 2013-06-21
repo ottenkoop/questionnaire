@@ -31,9 +31,7 @@ $(document).ready(() ->
 	$('.cloud_hosp').not(':first').hide()
 	$('	.hosp_next_6,
 			.bobo_doc_sitting,
-			.bobo_doc_mob,
-		 	.hosp_bird_glow,
-		 	.hosp_bird_glow_mob').hide()
+			.bobo_doc_mob').hide()
 
 	conversation_position = 0
 

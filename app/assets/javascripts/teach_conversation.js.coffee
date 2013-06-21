@@ -26,8 +26,8 @@ $(document).ready(() ->
 	$('	.cloud_teach').not(':first').hide()
 	$('	.bobo_teacher_glow,
 			.bird_teacher,
-			.person_top_mob,
-			.person_bot_glow_mob').hide()
+			.teach_bird_mob,
+			.teach_bobo_mob_glow').hide()
 
 	conversation_position = 0
 
@@ -41,28 +41,28 @@ $(document).ready(() ->
 		if (speaker == 'bobo')
 			$('	.teacher_speech_bubble2,
 					.bobo_teacher,
-					.bobo_teacher_mob,
 					.bird_teacher_glow,
-					.bird_teacher_glow_mob').hide()
+					.teach_bobo_mob,
+					.teach_bird_mob_glow').hide()
 			$('	.teacher_speech_bubble .teach_con').text(message)
 			$(' .teacher_speech_bubble,
 					.bird_teacher,
-					.bird_teacher_mob,
 					.bobo_teacher_glow,
-					.bobo_teacher_glow_mob').show()
+					.teach_bird_mob,
+					.teach_bobo_mob_glow').show()
 
 		else 
 			$('	.teacher_speech_bubble,
-				.bobo_teacher_glow,
-				.bobo_teacher_glow_mob,
-				.bird_teacher,
-				.bird_teacher_mob').hide()
+					.bobo_teacher_glow,
+					.bird_teacher,
+					.teach_bobo_mob_glow,
+					.teach_bird_mob').hide()
 			$('	.teacher_speech_bubble2 .teach_con').text(message)
 			$(' .teacher_speech_bubble2,
-				.bird_teacher_glow,
-				.bird_teacher_glow_mob,
-				.bobo_teacher,
-				.bobo_teacher_mob').show()
+					.bird_teacher_glow,
+					.bobo_teacher,
+					.teach_bobo_mob,
+					.teach_bird_mob_glow').show()
 
 
 		conversation_position++

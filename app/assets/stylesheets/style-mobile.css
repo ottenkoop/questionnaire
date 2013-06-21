@@ -160,7 +160,7 @@
 
 	.bobo_bed_mob {
 		width: 70%;
-		margin-top: 25%;
+		margin-top: 30%;
 		padding-bottom: 20%;
 	}
 
@@ -346,6 +346,7 @@
 		margin-left: 7%;
 		margin-bottom: 30%;
 		z-index: 10;
+		opacity: 0.9;
 	}
 
 	.s_bubble_quiz:after {
@@ -499,6 +500,7 @@
 
 	.result_bubble_mob {
 		margin-top: 10%;
+		margin-bottom: 55%;
 		position: relative;
 		width: 85%;
 		background: #FFFFFF;
@@ -507,6 +509,7 @@
 		border-radius: 7px;
 		margin-left: 7%;
 		z-index: 8;
+		opacity: 0.9;
 	}
 
 	.result_bubble_mob:after {
