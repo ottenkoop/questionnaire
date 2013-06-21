@@ -45,7 +45,7 @@ $(document).ready(() ->
 
 		if check_question < second_speaker
 			$('.patient1').show()
-		else if check_question > third_speaker
+		else if check_question >= third_speaker
 			$('.patient3').show()
 		else
 			$('.patient2').show()
