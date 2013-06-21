@@ -245,6 +245,7 @@
 
 	.level1_finished {
 		background: url('../assets/level1_finished.png');
+		cursor: default;
 	}
 
 	.level2 {
@@ -257,10 +258,12 @@
 
 	.level2_locked {
 		background: url('../assets/level2_locked.png');
+		cursor: default;
 	}
 
 	.level2_finished {
 		background: url('../assets/level2_finished.png');
+		cursor: default;
 	}
 
 	.level3 {
@@ -273,10 +276,12 @@
 
 	.level3_locked {
 		background: url('../assets/level3_locked.png');
+		cursor: default;
 	}
 
 	.level3_finished {
 		background: url('../assets/level3_finished.png');
+		cursor: default;
 	}
 
 	.picture{
