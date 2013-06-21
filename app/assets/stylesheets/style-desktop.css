@@ -849,6 +849,11 @@
 
 /*end screen*/
 
+	ul {
+		list-style: none;
+	}
+
+
 	.end_screen {
 		background-image: url('../assets/endscreen_bg.png');
 		background-repeat: no-repeat;
