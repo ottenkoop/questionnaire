@@ -586,16 +586,12 @@
 
 	.end {
 		margin-bottom: 4%;
+		width: 50%;
 	}
 
 	.organizations {
 		font-size: 13px;
 	}
-
-	.rens {
-		font-size: 10px;
-	}
-
 }
 
 
