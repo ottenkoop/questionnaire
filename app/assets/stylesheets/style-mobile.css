@@ -10,7 +10,7 @@
 	 	width: 100%;
 	 	bottom: 0;
 	 	left: 0;
-	 	position: fixed;
+	 	position: absolute;
 	}
 
 	.container-fluid{
@@ -160,7 +160,7 @@
 	}
 
 	.bobo_bed_mob {
-		width: 70%;
+		width: 60%;
 		margin-top: 30%;
 		padding-bottom: 20%;
 	}
@@ -499,7 +499,7 @@
 
 	.result_bubble_mob {
 		margin-top: 10%;
-		margin-bottom: 45%;
+		margin-bottom: 35%;
 		position: relative;
 		width: 85%;
 		background: #FFFFFF;

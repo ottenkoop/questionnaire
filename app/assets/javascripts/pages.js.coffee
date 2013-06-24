@@ -3,10 +3,16 @@ $(document).ready(() ->
 	# window.onbeforeunload = ->
  	#		"Are you sure you want to refresh? Your results will not be saved!"
 	
-	# window.addEventListener "load", ->
-	#   setTimeout (->
-	#     window.scrollTo 0, 1
-	#   ), 0
+	window.addEventListener "load", ->
+	  setTimeout (->
+	    window.scrollTo 0, 1
+	  ), 0
+
+	hideAddressBar = ->
+  document.documentElement.style.height = (window.outerHeight / window.devicePixelRatio) + "px"  if document.documentElement.scrollHeight < window.outerHeight / window.devicePixelRatio
+  setTimeout window.scrollTo(1, 1), 0
+	window.addEventListener "load", ->
+  hideAddressBar()
 
 	$('	div.question:not(:first),
 			.next_btn2, 
@@ -119,5 +125,5 @@ $(document).ready(() ->
 	$('a.next_btn2').click ->
 		$("form").submit()
 		false
-	
+
 )

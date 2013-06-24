@@ -38,7 +38,7 @@ $(document).ready(() ->
 
 	total_talks = (conversation.talks.length)
 
-	$('.hosp_next, .hosp_next_btn_mob').on('click', (e) ->
+	$('.hosp_next').on('click', (e) ->
 
 		speaker = conversation.talks[conversation_position].speaker
 		message = conversation.talks[conversation_position].message
