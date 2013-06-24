@@ -23,7 +23,7 @@
 		<h1>Answers:</h1>
 		<%= q.fields_for :answers do |a| %>
 			<%= a.text_field :content, :maxlength => '75', :required => true %>
-			<%= a.select(:points, [['Wrong', 0], ['Right', 1]]) %>
+			<%= a.select(:points, [['Right', 1], ['Wrong', 0]]) %>
 		<% end %>
 
 		<%= q.label :discription, "The answer given is wrong/good because ..." %>

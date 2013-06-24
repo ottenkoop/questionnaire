@@ -33,6 +33,7 @@ def create
       flash[:notice] = "Question added."
       redirect_to surveys_url
     else
+      flash[:alert] = "Please fill in a valid question. It should start with a capital and end with a '?'."
       render 'new'
     end
 end

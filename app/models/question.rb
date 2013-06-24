@@ -13,6 +13,8 @@
 class Question < ActiveRecord::Base
   attr_accessible :content, :answers_attributes, :survey_id, :discription
 
+  validates_format_of :content, :with => /^[A-Z][\w\W\s]{1,}[?]$/
+
   belongs_to :survey
   has_many :answers
 
