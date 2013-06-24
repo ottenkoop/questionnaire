@@ -3,10 +3,10 @@ $(document).ready(() ->
 	# window.onbeforeunload = ->
  	#		"Are you sure you want to refresh? Your results will not be saved!"
 	
-	window.addEventListener "load", ->
-	  setTimeout (->
-	    window.scrollTo 0, 1
-	  ), 0
+	# window.addEventListener "load", ->
+	#   setTimeout (->
+	#     window.scrollTo 0, 1
+	#   ), 0
 
 	$('	div.question:not(:first),
 			.next_btn2, 
@@ -115,4 +115,9 @@ $(document).ready(() ->
 				.bobo_wrong_answer,
 				div.selected_wrong,
 				div.wronganswer').hide();
+
+	$('a.next_btn2').click ->
+		$("form").submit()
+		false
+	
 )
